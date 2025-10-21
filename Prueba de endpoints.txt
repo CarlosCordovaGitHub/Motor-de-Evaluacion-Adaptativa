@@ -1,0 +1,71 @@
+Primer json endpoint post session/init
+{
+  "pkg": {
+    "session_id": "S-DEMO-001",
+    "locale": "es-EC",
+    "items": [
+      {
+        "item_id": "Q1",
+        "type": "numeric",
+        "skills": ["norma2"],
+        "difficulty": { "level": "easy", "numeric": 1 },
+        "time_limit_sec": 60,
+        "stem": { "es-EC": "Calcula ||(3,4)||₂" },
+        "answer_key": { "value": 5, "tolerance": 0 },
+        "irt_params": { "a": 1.1, "b": -0.4, "c": 0.0 }
+      },
+      {
+        "item_id": "Q2",
+        "type": "multiple_choice",
+        "skills": ["definiciones"],
+        "difficulty": { "level": "medium", "numeric": 2 },
+        "time_limit_sec": 60,
+        "stem": { "es-EC": "¿Cuál es la definición correcta de la norma 2?" },
+        "answer_key": {
+          "options": [
+            { "id": "A", "text": { "es-EC": "Suma de componentes" } },
+            { "id": "B", "text": { "es-EC": "Raíz de la suma de cuadrados" } },
+            { "id": "C", "text": { "es-EC": "Máximo valor absoluto" } }
+          ],
+          "correct_option_id": "B"
+        },
+        "irt_params": { "a": 0.9, "b": 0.0, "c": 0.2 }
+      }
+    ],
+    "delivery_constraints": {
+      "max_items_this_session": 6,
+      "target_mastery": 0.8,
+      "path_policy": "mastery_first",
+      "retry_policy": { "max_attempts_per_item": 2, "cooldown_sec": 0 },
+      "escalation_rules": []
+    }
+  }
+}
+
+
+session: S-DEMO-001
+
+suponiendo que el estudiante respondió bien y rápido el item 1 "Q1"
+
+{
+  "attempt": {
+    "item_id": "Q1",
+    "attempt": 1,
+    "correct": true,
+    "response_time_sec": 20,
+    "hints_used": 0
+  }
+}
+
+Y también suponiendo que el estudiante respondió bien y rápido el item 2 "Q2"
+{
+  "attempt": {
+    "item_id": "Q2",
+    "attempt": 2,
+    "correct": true,
+    "response_time_sec": 35,
+    "hints_used": 0,
+    "selected_option_id": "B"
+  }
+}
+
