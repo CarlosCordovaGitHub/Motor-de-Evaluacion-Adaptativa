@@ -1,0 +1,619 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{ref1}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=13830801cce0371253cda71425a582c0}{%
+           family={Zapata\bibnamedelima Ros},
+           familyi={Z\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{13830801cce0371253cda71425a582c0}
+      \strng{fullhash}{13830801cce0371253cda71425a582c0}
+      \strng{fullhashraw}{13830801cce0371253cda71425a582c0}
+      \strng{bibnamehash}{13830801cce0371253cda71425a582c0}
+      \strng{authorbibnamehash}{13830801cce0371253cda71425a582c0}
+      \strng{authornamehash}{13830801cce0371253cda71425a582c0}
+      \strng{authorfullhash}{13830801cce0371253cda71425a582c0}
+      \strng{authorfullhashraw}{13830801cce0371253cda71425a582c0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Paraguaya de Educación a Distancia}
+      \field{number}{1}
+      \field{title}{IA generativa y ChatGPT en Educación: Un reto para la evaluación y ¿una nueva pedagogía?}
+      \field{volume}{5}
+      \field{year}{2024}
+      \field{pages}{12\bibrangedash 44}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.56152/reped2024-vol5num1-art2
+      \endverb
+    \endentry
+    \entry{ref2}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5f25f602d8200e8fe7b00022c3bb1ac2}{%
+           family={Juárez\bibnamedelima Cádiz},
+           familyi={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f25f602d8200e8fe7b00022c3bb1ac2}
+      \strng{fullhash}{5f25f602d8200e8fe7b00022c3bb1ac2}
+      \strng{fullhashraw}{5f25f602d8200e8fe7b00022c3bb1ac2}
+      \strng{bibnamehash}{5f25f602d8200e8fe7b00022c3bb1ac2}
+      \strng{authorbibnamehash}{5f25f602d8200e8fe7b00022c3bb1ac2}
+      \strng{authornamehash}{5f25f602d8200e8fe7b00022c3bb1ac2}
+      \strng{authorfullhash}{5f25f602d8200e8fe7b00022c3bb1ac2}
+      \strng{authorfullhashraw}{5f25f602d8200e8fe7b00022c3bb1ac2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RIED-Revista Iberoamericana de Educación a Distancia}
+      \field{number}{1}
+      \field{title}{PathRAG application in adaptive learning with generative AI for inclusive and sustainable education}
+      \field{volume}{29}
+      \field{year}{2026}
+      \verb{doi}
+      \verb 10.5944/ried.45378
+      \endverb
+    \endentry
+    \entry{ref3}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a0b74e70b6c333006b8ab6db7841946f}{%
+           family={Tenorio-Sepúlveda},
+           familyi={T\bibinithyphendelim S\bibinitperiod},
+           given={Guillermo\bibnamedelima C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=775a37a39a99894d68adac001b31a0f6}{%
+           family={Soberanes-Martín},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={Alejandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=333ec395754e261acf14293c8519b618}{%
+           family={Martínez-Reyes},
+           familyi={M\bibinithyphendelim R\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{899d77ea92dd3926948bb551f4bce2fc}
+      \strng{fullhash}{d5d3fc399e73113c6472be1713ec7714}
+      \strng{fullhashraw}{d5d3fc399e73113c6472be1713ec7714}
+      \strng{bibnamehash}{d5d3fc399e73113c6472be1713ec7714}
+      \strng{authorbibnamehash}{d5d3fc399e73113c6472be1713ec7714}
+      \strng{authornamehash}{899d77ea92dd3926948bb551f4bce2fc}
+      \strng{authorfullhash}{d5d3fc399e73113c6472be1713ec7714}
+      \strng{authorfullhashraw}{d5d3fc399e73113c6472be1713ec7714}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Gestión Universitaria}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Diseño instruccional con aprendizaje adaptativo de un curso en línea: Redacción de protocolos de investigación}
+      \field{volume}{2}
+      \field{year}{2018}
+      \field{pages}{9\bibrangedash 16}
+      \range{pages}{8}
+    \endentry
+    \entry{ref7}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d4dfb4bea6e0dd0efdf81636cf050a55}{%
+           family={Carbonell\bibnamedelima Bernal},
+           familyi={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Nuria},
+           giveni={N\bibinitperiod}}}%
+        {{hash=15877d20d7e531292ea486be62596ae6}{%
+           family={Hernández\bibnamedelima Prados},
+           familyi={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={María\bibnamedelima Ángeles},
+           giveni={M\bibinitperiod\bibinitdelim Á\bibinitperiod}}}%
+      }
+      \strng{namehash}{276e649968d8753f0605a198f3c1c444}
+      \strng{fullhash}{276e649968d8753f0605a198f3c1c444}
+      \strng{fullhashraw}{276e649968d8753f0605a198f3c1c444}
+      \strng{bibnamehash}{276e649968d8753f0605a198f3c1c444}
+      \strng{authorbibnamehash}{276e649968d8753f0605a198f3c1c444}
+      \strng{authornamehash}{276e649968d8753f0605a198f3c1c444}
+      \strng{authorfullhash}{276e649968d8753f0605a198f3c1c444}
+      \strng{authorfullhashraw}{276e649968d8753f0605a198f3c1c444}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EDUTEC. Revista Electrónica de Tecnología Educativa}
+      \field{month}{9}
+      \field{number}{89}
+      \field{title}{Impacto de los Sistemas de Tutoría Inteligente. Una revisión sistemática}
+      \field{year}{2024}
+      \field{pages}{121\bibrangedash 132}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.21556/edutec.2024.89.3025
+      \endverb
+    \endentry
+    \entry{ref8}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1618f859bebc2dcd3ed823effde7e5ab}{%
+           family={Rodríguez\bibnamedelima Chávez},
+           familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={María\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{fullhash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{fullhashraw}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{bibnamehash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{authorbibnamehash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{authornamehash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{authorfullhash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{authorfullhashraw}{1618f859bebc2dcd3ed823effde7e5ab}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RIDE. Revista Iberoamericana para la Investigación y el Desarrollo Educativo}
+      \field{number}{22}
+      \field{title}{Sistemas de tutoría inteligente y su aplicación en la educación superior}
+      \field{volume}{12}
+      \field{year}{2021}
+      \field{pages}{e175}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.23913/ride.v11i22.848
+      \endverb
+    \endentry
+    \entry{ref10}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5dec13fbed9feebf31b34fc900f4264c}{%
+           family={Gheibi},
+           familyi={G\bibinitperiod},
+           given={Omid},
+           giveni={O\bibinitperiod}}}%
+        {{hash=35e3a091dadcb8fdebaf15b5322878a9}{%
+           family={Weyns},
+           familyi={W\bibinitperiod},
+           given={Danny},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a49942030a039293fe35550c48ec7660}{%
+           family={Quin},
+           familyi={Q\bibinitperiod},
+           given={Fergal},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d5b463a83d485a1c555d5f864cff9e1}
+      \strng{fullhash}{db9ac45091eb6055a6cb4d976e7f07ba}
+      \strng{fullhashraw}{db9ac45091eb6055a6cb4d976e7f07ba}
+      \strng{bibnamehash}{db9ac45091eb6055a6cb4d976e7f07ba}
+      \strng{authorbibnamehash}{db9ac45091eb6055a6cb4d976e7f07ba}
+      \strng{authornamehash}{7d5b463a83d485a1c555d5f864cff9e1}
+      \strng{authorfullhash}{db9ac45091eb6055a6cb4d976e7f07ba}
+      \strng{authorfullhashraw}{db9ac45091eb6055a6cb4d976e7f07ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Autonomous and Adaptive Systems}
+      \field{number}{3}
+      \field{title}{Applying Machine Learning in Self-adaptive Systems: A Systematic Literature Review}
+      \field{volume}{15}
+      \field{year}{2021}
+      \field{pages}{Article 9}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1145/3469440
+      \endverb
+    \endentry
+    \entry{ref5}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b89b8a847424eff8434f57346d96858f}{%
+           family={Hidalgo-Montesinos},
+           familyi={H\bibinithyphendelim M\bibinitperiod},
+           given={María\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=32bf4c64113323d7a1ec25f459c080fd}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Brian\bibnamedelima F.},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{3342d6dc9fca0f49cbc083c5d96e08a4}
+      \strng{fullhash}{3342d6dc9fca0f49cbc083c5d96e08a4}
+      \strng{fullhashraw}{3342d6dc9fca0f49cbc083c5d96e08a4}
+      \strng{bibnamehash}{3342d6dc9fca0f49cbc083c5d96e08a4}
+      \strng{authorbibnamehash}{3342d6dc9fca0f49cbc083c5d96e08a4}
+      \strng{authornamehash}{3342d6dc9fca0f49cbc083c5d96e08a4}
+      \strng{authorfullhash}{3342d6dc9fca0f49cbc083c5d96e08a4}
+      \strng{authorfullhashraw}{3342d6dc9fca0f49cbc083c5d96e08a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Psicología Clínica con Niños y Adolescentes}
+      \field{month}{7}
+      \field{number}{2}
+      \field{title}{Una introducción didáctica a la Teoría de Respuesta al Ítem para comprender la construcción de escalas}
+      \field{volume}{3}
+      \field{year}{2016}
+      \field{pages}{13\bibrangedash 21}
+      \range{pages}{9}
+    \endentry
+    \entry{ref4}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=c5eaba53f4110a0f08b938f4cfe2e2c7}{%
+           family={Attorresi},
+           familyi={A\bibinitperiod},
+           given={Horacio\bibnamedelima F.},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=57ddb0a4c4847d90043104e4fda98382}{%
+           family={Lozzia},
+           familyi={L\bibinitperiod},
+           given={Gabriela\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b62505f86b54270165b955724870acf9}{%
+           family={Abal},
+           familyi={A\bibinitperiod},
+           given={Francisco\bibnamedelimb J.\bibnamedelimi P.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e43e69d5dc7ae2695625473545de13b4}{%
+           family={Galibert},
+           familyi={G\bibinitperiod},
+           given={María\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e29debf121f405bf6adae3b0df43a6aa}{%
+           family={Aguerri},
+           familyi={A\bibinitperiod},
+           given={María\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7342c62955eb105bad4fbe4aef0b6f40}
+      \strng{fullhash}{1f4e6a0557ca6801255b41c28ab205bb}
+      \strng{fullhashraw}{1f4e6a0557ca6801255b41c28ab205bb}
+      \strng{bibnamehash}{1f4e6a0557ca6801255b41c28ab205bb}
+      \strng{authorbibnamehash}{1f4e6a0557ca6801255b41c28ab205bb}
+      \strng{authornamehash}{7342c62955eb105bad4fbe4aef0b6f40}
+      \strng{authorfullhash}{1f4e6a0557ca6801255b41c28ab205bb}
+      \strng{authorfullhashraw}{1f4e6a0557ca6801255b41c28ab205bb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Argentina de Clínica Psicológica}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{Teoría de Respuesta al Ítem. Conceptos básicos y aplicaciones para la medición de constructos psicológicos}
+      \field{volume}{18}
+      \field{year}{2009}
+      \field{pages}{179\bibrangedash 188}
+      \range{pages}{10}
+    \endentry
+    \entry{ref6}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=b62505f86b54270165b955724870acf9}{%
+           family={Abal},
+           familyi={A\bibinitperiod},
+           given={Francisco\bibnamedelimb J.\bibnamedelimi P.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=57ddb0a4c4847d90043104e4fda98382}{%
+           family={Lozzia},
+           familyi={L\bibinitperiod},
+           given={Gabriela\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e29debf121f405bf6adae3b0df43a6aa}{%
+           family={Aguerri},
+           familyi={A\bibinitperiod},
+           given={María\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=e43e69d5dc7ae2695625473545de13b4}{%
+           family={Galibert},
+           familyi={G\bibinitperiod},
+           given={María\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c5eaba53f4110a0f08b938f4cfe2e2c7}{%
+           family={Attorresi},
+           familyi={A\bibinitperiod},
+           given={Horacio\bibnamedelima F.},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8548cde4f9f7df0492eb1dfd0987d6c}
+      \strng{fullhash}{af9ac0cf593c9bbfa057a8428fa591ab}
+      \strng{fullhashraw}{af9ac0cf593c9bbfa057a8428fa591ab}
+      \strng{bibnamehash}{af9ac0cf593c9bbfa057a8428fa591ab}
+      \strng{authorbibnamehash}{af9ac0cf593c9bbfa057a8428fa591ab}
+      \strng{authornamehash}{b8548cde4f9f7df0492eb1dfd0987d6c}
+      \strng{authorfullhash}{af9ac0cf593c9bbfa057a8428fa591ab}
+      \strng{authorfullhashraw}{af9ac0cf593c9bbfa057a8428fa591ab}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Colombiana de Psicología}
+      \field{number}{1}
+      \field{title}{La escasa aplicación de la teoría de respuesta al ítem en tests de ejecución típica}
+      \field{volume}{19}
+      \field{year}{2010}
+      \field{pages}{111\bibrangedash 122}
+      \range{pages}{12}
+    \endentry
+    \entry{ref9}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7f39f39c287d1436087e7a23a1c90f3c}{%
+           family={Hicke},
+           familyi={H\bibinitperiod},
+           given={Yvonne},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f39f39c287d1436087e7a23a1c90f3c}
+      \strng{fullhash}{7f39f39c287d1436087e7a23a1c90f3c}
+      \strng{fullhashraw}{7f39f39c287d1436087e7a23a1c90f3c}
+      \strng{bibnamehash}{7f39f39c287d1436087e7a23a1c90f3c}
+      \strng{authorbibnamehash}{7f39f39c287d1436087e7a23a1c90f3c}
+      \strng{authornamehash}{7f39f39c287d1436087e7a23a1c90f3c}
+      \strng{authorfullhash}{7f39f39c287d1436087e7a23a1c90f3c}
+      \strng{authorfullhashraw}{7f39f39c287d1436087e7a23a1c90f3c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{arXiv:2311.14707v1}
+      \field{title}{Knowledge Tracing Challenge: Optimal Activity Sequencing for Students}
+      \field{year}{2023}
+    \endentry
+    \entry{ref11}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=9e6da10072b417e8dc486a073f5bc179}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Shuo},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7e4290bad319dc9b96a098c8eee04fc8}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3ded51c2dcd99a355961714a8b8f13e1}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ee3f7d7b96add98106db907e189d6c13}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9df54cce775e1db6ed462656c97e7ae8}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Haibo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d1acabc2b09e1622e7ce3efc4776361f}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Patrick\bibnamedelimb X.\bibnamedelimi W.},
+           giveni={P\bibinitperiod\bibinitdelim X\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{15aea2c2d4d7c6174c338ff492f98775}
+      \strng{fullhash}{084238e4b1bfb397c10512529fa7c677}
+      \strng{fullhashraw}{084238e4b1bfb397c10512529fa7c677}
+      \strng{bibnamehash}{084238e4b1bfb397c10512529fa7c677}
+      \strng{authorbibnamehash}{084238e4b1bfb397c10512529fa7c677}
+      \strng{authornamehash}{15aea2c2d4d7c6174c338ff492f98775}
+      \strng{authorfullhash}{084238e4b1bfb397c10512529fa7c677}
+      \strng{authorfullhashraw}{084238e4b1bfb397c10512529fa7c677}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Developments in the Built Environment}
+      \field{title}{A Bayesian-based knowledge tracing model for improving safety training outcomes in construction: An adaptive learning framework}
+      \field{volume}{13}
+      \field{year}{2023}
+      \field{pages}{100111}
+      \range{pages}{1}
+    \endentry
+    \entry{ref12}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=579f549f92bf2c35e86a8ca0812d2b3f}{%
+           family={Psychogyiopoulos},
+           familyi={P\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f8a286db1d2062e7285344ca26ea80b2}{%
+           family={Smits},
+           familyi={S\bibinitperiod},
+           given={Niels},
+           giveni={N\bibinitperiod}}}%
+        {{hash=139d702ff991098ee00dd5c208846b8d}{%
+           family={Ark},
+           familyi={A\bibinitperiod},
+           given={L.\bibnamedelimi Andries},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc20f91bff1af3015cc466cd6ea023cc}
+      \strng{fullhash}{b51f2b883bd28d5350431899ed758921}
+      \strng{fullhashraw}{b51f2b883bd28d5350431899ed758921}
+      \strng{bibnamehash}{b51f2b883bd28d5350431899ed758921}
+      \strng{authorbibnamehash}{b51f2b883bd28d5350431899ed758921}
+      \strng{authornamehash}{bc20f91bff1af3015cc466cd6ea023cc}
+      \strng{authorfullhash}{b51f2b883bd28d5350431899ed758921}
+      \strng{authorfullhashraw}{b51f2b883bd28d5350431899ed758921}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computerized Adaptive Testing}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Estimating the Joint Item-Score Density Using an Unrestricted Latent Class Model}
+      \field{volume}{12}
+      \field{year}{2025}
+      \field{pages}{136\bibrangedash 151}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.7333/2507-1203136
+      \endverb
+    \endentry
+    \entry{ref13}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=632df4bdf2194c831f93be0672616725}{%
+           family={Vargas\bibnamedelima Peña},
+           familyi={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Rey Juan Carlos}%
+      }
+      \list{location}{1}{%
+        {Madrid, España}%
+      }
+      \strng{namehash}{632df4bdf2194c831f93be0672616725}
+      \strng{fullhash}{632df4bdf2194c831f93be0672616725}
+      \strng{fullhashraw}{632df4bdf2194c831f93be0672616725}
+      \strng{bibnamehash}{632df4bdf2194c831f93be0672616725}
+      \strng{authorbibnamehash}{632df4bdf2194c831f93be0672616725}
+      \strng{authornamehash}{632df4bdf2194c831f93be0672616725}
+      \strng{authorfullhash}{632df4bdf2194c831f93be0672616725}
+      \strng{authorfullhashraw}{632df4bdf2194c831f93be0672616725}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estudio comparativo de modelos adaptativos y análisis de su uso en un ambiente de m-Learning implementando la técnica adaptativa de la Teoría de Respuesta al Ítem (IRT)}
+      \field{type}{mathesis}
+      \field{year}{2012}
+      \true{nocite}
+    \endentry
+    \entry{ref14}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5318fd8d630c7df1214a919387f1baea}{%
+           family={Hernández-Salazar},
+           familyi={H\bibinithyphendelim S\bibinitperiod},
+           given={Edgar},
+           giveni={E\bibinitperiod}}}%
+        {{hash=163d8b3c40fa2458fbc0a881cff47423}{%
+           family={Beltrán},
+           familyi={B\bibinitperiod},
+           given={Carlos\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{700639024092fdcbf964f850db4589cf}
+      \strng{fullhash}{700639024092fdcbf964f850db4589cf}
+      \strng{fullhashraw}{700639024092fdcbf964f850db4589cf}
+      \strng{bibnamehash}{700639024092fdcbf964f850db4589cf}
+      \strng{authorbibnamehash}{700639024092fdcbf964f850db4589cf}
+      \strng{authornamehash}{700639024092fdcbf964f850db4589cf}
+      \strng{authorfullhash}{700639024092fdcbf964f850db4589cf}
+      \strng{authorfullhashraw}{700639024092fdcbf964f850db4589cf}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Tecnología, Investigación y Academia (TIA)}
+      \field{number}{2}
+      \field{title}{SCRUM, un enfoque práctico de metodología ágil para la ingeniería de software}
+      \field{volume}{8}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{61\bibrangedash 73}
+      \range{pages}{13}
+    \endentry
+    \entry{ref15}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=ee6f08fcba839e09471a0bc69152b6a5}{%
+           family={Schwaber},
+           familyi={S\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6e3f26f6f816a26c6ab36bc7a899bcde}{%
+           family={Sutherland},
+           familyi={S\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{fullhash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{fullhashraw}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{bibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorbibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authornamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorfullhash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorfullhashraw}{303ea1dc92fd8c772eac56316b2074ef}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Versión 2020. Licencia Creative Commons Attribution Share-Alike 4.0}
+      \field{title}{La Guía Scrum: La guía definitiva de Scrum – Las reglas del juego}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://scrumguides.org
+      \endverb
+      \verb{url}
+      \verb https://scrumguides.org
+      \endverb
+    \endentry
+    \entry{ref16}{thesis}{}{}
+      \name{author}{2}{}{%
+        {{hash=5e267e565bbf2cdf6682b0a21a2ff868}{%
+           family={Sarango},
+           familyi={S\bibinitperiod},
+           given={José\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=fe957075ba36fa0bf4e33cd9c7782ce1}{%
+           family={Villamar},
+           familyi={V\bibinitperiod},
+           given={Mauricio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Escuela Superior Politécnica del Litoral}%
+      }
+      \list{location}{1}{%
+        {Ecuador}%
+      }
+      \strng{namehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
+      \strng{fullhash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
+      \strng{fullhashraw}{a9a4813ffbe3fee9bf8a78bd20913c8b}
+      \strng{bibnamehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
+      \strng{authorbibnamehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
+      \strng{authornamehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
+      \strng{authorfullhash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
+      \strng{authorfullhashraw}{a9a4813ffbe3fee9bf8a78bd20913c8b}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aplicación de metodologías de desarrollo de software en proyectos de ingeniería}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

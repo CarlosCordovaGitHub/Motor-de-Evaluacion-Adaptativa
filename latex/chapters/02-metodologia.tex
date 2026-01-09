@@ -1,0 +1,59 @@
+\chapter{METODOLOGÍA}
+
+\section{Enfoque y diseño de la investigación}
+
+En el desarrollo del Sistema de Evaluación Adaptativa (Componente B) se utilizó un enfoque de investigación cuantitativa en el que la evaluación era objetiva, numérica, reproducible y medible de las variables pedagógicas y computacionales. Este enfoque era lógico ya que se relaciona con el tipo de problema abordado, es decir, optimizar procesos de evaluación y validar un sistema de software fundamentado en modelos matemáticos, estadísticos y probabilísticos que centra la evaluación en niveles profundos del conocimiento del estudiante.
+El método cuantitativo permite la evaluación de la forma de actuar del motor adaptativo mediante la valoración de indicadores con los que se puede medir, como pueden ser la estimación de la habilidad latente del aprendiz ($\theta$), el ajuste en base a la precisión de las métricas como el error cuadrático medio (RMSE), la fiabilidad de las probabilidades analizada con la métrica de Brier Score; además tomando métricas concretas de la ingeniería de ciencias computacionales como la latencia de la respuesta del sistema, percentiles de tiempo de procesamiento (P50 y P95), y la tasa de peticiones por segundo (RPS). Estas métricas sirven para el diagnóstico en base a criterios cuantificables de la precisión, la eficiencia y la escalabilidad del sistema propuesto.
+La utilización de esta vertiente metodológica se apoya en la documentación especializada de los sistemas de aprendizaje adaptativo y la evaluación psicométrica, la cual establece que para la obtención de indicadores robustos de aprendizaje deben emplearse modelos estadísticos que permiten inferir variables latentes a partir de la evidencia empírica observable, particularmente en el caso de la Teoría de Respuesta al Ítem (IRT) y en los modelos bayesianos de rastreo de conocimiento\cite{4,5,11,12}.
+
+\section{Clasificación de la investigación}
+
+Tomando en cuenta el marco metodológico que se ha seguido, esta investigación puede ser clasificada como una investigación tecnológica aplicada, la cual se halla orientada al diseño, a la validación y a la implementación de un artefacto de software funcional y operativo que tiene la finalidad de proporcionar una solución a un problema de práctica educativa en contextos locales, específicamente, la modulación adaptativa de evaluaciones mediante la integración de modelos de Machine Learning en la educación superior  \cite{7,10}.
+
+\section{Arquitectura experimental y estrategia de simulación}
+
+La arquitectura experimental se apoya en la simulación computacional, pues las limitaciones logísticas, éticas y operativas de llevar a cabo un elevado número de pruebas con estudiantes reales en una fase incipiente del desarrollo nos llevaron a adoptar esta opción metodológica. En este contexto, la simulación estocástica y los métodos Monte Carlo conforman una opción metodológica argumentada teóricamente, pero también muy extendida y validada en la literatura para evaluar sistemas adaptativos complejos  \cite{3,9,10}.
+
+Este modelo propone la construcción de un entorno de simulación en el que fueron modelados perfiles de estudiantes virtuales con ciertos parámetros psicométricos controlados, entre los que podemos encontrar el nivel de habilidad inicial  ($\theta$), la consistencia de respuesta ante ítems de dificultad variable y el ratio de aprendizaje. Este entorno permite generar un elevado número de interacciones simuladas entre el sistema y perfiles de estudiantes heterogéneos, lo que permite estudiar la convergencia del algoritmo adaptativo, su comportamiento bajo distintas condiciones operativas y evaluar la robustez frente a situaciones adversas o excepcionales.
+De igual manera, la simulación computacional favoreció la validación operativa del sistema en situaciones de baja probabilidad de ocurrencia o difícilmente reproducibles en contextos reales de aplicación, tales como patrones de respuestas erráticas por parte de los estudiantes, ejecución de múltiples sesiones de evaluación de manera concurrente, y escenarios de escasez de ítems calibrados en el banco de preguntas. Todo ello contribuyó a proporcionar consistencia empírica a la evaluación de la tolerancia a fallos y la robustez estructural del motor adaptativo.
+Finalmente, el diseño metodológico propuesto permite establecer que esta fase corresponde a una validación algorítmica y técnica del sistema en condiciones controladas. La arquitectura del estudio contempla la ejecución de pruebas con usuarios reales para una fase posterior del proceso de investigación, una fase que estará orientada al análisis del impacto pedagógico efectivo del sistema y al estudio de factores cualitativos emergentes en contextos auténticos de aprendizaje.
+
+En el siguiente apartado se presenta la relación detallada de las variables e indicadores de validación en la Tabla~\ref{tab:criterios-cuantitativos}, la cual recoge la síntesis estructurada de los criterios cuantitativos que se han establecido para la evaluación sistemática del desempeño del motor adaptativo.
+
+\begin{table}[H]
+\centering
+\label{tab:criterios-cuantitativos}
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{4.0cm}|p{5.5cm}|p{5.5cm}|}
+\hline
+\textbf{Variable operacionalizada} & \textbf{Descripción conceptual} & \textbf{Función en el proceso de validación} \\
+\hline
+$\theta$ (parámetro de habilidad estimado) &
+Inferencia del nivel latente de dominio cognitivo del estudiante &
+Evaluar la precisión diagnóstica del modelo psicométrico \\
+\hline
+RMSE / MAE &
+Cuantificación del error entre el parámetro real de habilidad y su estimación computacional &
+Medir exactitud predictiva del sistema implementado \\
+\hline
+Brier Score &
+Función de pérdida cuadrática aplicada a probabilidades predichas &
+Evaluar calidad y calibración de las predicciones probabilísticas \\
+\hline
+Latencia (ms) &
+Duración temporal del procesamiento de peticiones del sistema &
+Analizar rendimiento computacional y eficiencia algorítmica \\
+\hline
+RPS &
+Volumen de peticiones procesadas exitosamente por unidad temporal &
+Evaluar escalabilidad horizontal y capacidad de concurrencia \\
+\hline
+P50 / P95 &
+Percentiles de la distribución de tiempos de respuesta &
+Detectar degradación del rendimiento bajo condiciones de carga elevada \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Criterios cuantitativos utilizados para la validación del motor adaptativo}
+\end{table}
