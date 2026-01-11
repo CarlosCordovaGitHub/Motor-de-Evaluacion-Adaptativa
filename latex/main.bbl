@@ -477,37 +477,6 @@
       \verb 10.7333/2507-1203136
       \endverb
     \endentry
-    \entry{ref13}{thesis}{}{}
-      \name{author}{1}{}{%
-        {{hash=632df4bdf2194c831f93be0672616725}{%
-           family={Vargas\bibnamedelima Peña},
-           familyi={V\bibinitperiod\bibinitdelim P\bibinitperiod},
-           given={Luis},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Universidad Rey Juan Carlos}%
-      }
-      \list{location}{1}{%
-        {Madrid, España}%
-      }
-      \strng{namehash}{632df4bdf2194c831f93be0672616725}
-      \strng{fullhash}{632df4bdf2194c831f93be0672616725}
-      \strng{fullhashraw}{632df4bdf2194c831f93be0672616725}
-      \strng{bibnamehash}{632df4bdf2194c831f93be0672616725}
-      \strng{authorbibnamehash}{632df4bdf2194c831f93be0672616725}
-      \strng{authornamehash}{632df4bdf2194c831f93be0672616725}
-      \strng{authorfullhash}{632df4bdf2194c831f93be0672616725}
-      \strng{authorfullhashraw}{632df4bdf2194c831f93be0672616725}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Estudio comparativo de modelos adaptativos y análisis de su uso en un ambiente de m-Learning implementando la técnica adaptativa de la Teoría de Respuesta al Ítem (IRT)}
-      \field{type}{mathesis}
-      \field{year}{2012}
-      \true{nocite}
-    \endentry
     \entry{ref14}{article}{}{}
       \name{author}{2}{}{%
         {{hash=5318fd8d630c7df1214a919387f1baea}{%
@@ -538,7 +507,6 @@
       \field{title}{SCRUM, un enfoque práctico de metodología ágil para la ingeniería de software}
       \field{volume}{8}
       \field{year}{2020}
-      \true{nocite}
       \field{pages}{61\bibrangedash 73}
       \range{pages}{13}
     \endentry
@@ -570,13 +538,43 @@
       \field{note}{Versión 2020. Licencia Creative Commons Attribution Share-Alike 4.0}
       \field{title}{La Guía Scrum: La guía definitiva de Scrum – Las reglas del juego}
       \field{year}{2020}
-      \true{nocite}
       \verb{urlraw}
       \verb https://scrumguides.org
       \endverb
       \verb{url}
       \verb https://scrumguides.org
       \endverb
+    \endentry
+    \entry{ref13}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=632df4bdf2194c831f93be0672616725}{%
+           family={Vargas\bibnamedelima Peña},
+           familyi={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Rey Juan Carlos}%
+      }
+      \list{location}{1}{%
+        {Madrid, España}%
+      }
+      \strng{namehash}{632df4bdf2194c831f93be0672616725}
+      \strng{fullhash}{632df4bdf2194c831f93be0672616725}
+      \strng{fullhashraw}{632df4bdf2194c831f93be0672616725}
+      \strng{bibnamehash}{632df4bdf2194c831f93be0672616725}
+      \strng{authorbibnamehash}{632df4bdf2194c831f93be0672616725}
+      \strng{authornamehash}{632df4bdf2194c831f93be0672616725}
+      \strng{authorfullhash}{632df4bdf2194c831f93be0672616725}
+      \strng{authorfullhashraw}{632df4bdf2194c831f93be0672616725}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estudio comparativo de modelos adaptativos y análisis de su uso en un ambiente de m-Learning implementando la técnica adaptativa de la Teoría de Respuesta al Ítem (IRT)}
+      \field{type}{mathesis}
+      \field{year}{2012}
+      \true{nocite}
     \endentry
     \entry{ref16}{thesis}{}{}
       \name{author}{2}{}{%
@@ -605,8 +603,8 @@
       \strng{authornamehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
       \strng{authorfullhash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
       \strng{authorfullhashraw}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Aplicación de metodologías de desarrollo de software en proyectos de ingeniería}

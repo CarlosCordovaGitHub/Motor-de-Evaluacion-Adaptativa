@@ -323,6 +323,11 @@ INPUT .\chapters\02-metodologia.tex
 INPUT .\chapters\02-metodologia.tex
 INPUT .\chapters\02-metodologia.tex
 INPUT chapters\02-metodologia.tex
+INPUT C:\Users\carlo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
+INPUT C:\Users\carlo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Users\carlo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Users\carlo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT C:\Users\carlo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT .\chapters\03-resultados-conclusiones.tex
 INPUT .\chapters\03-resultados-conclusiones.tex
 INPUT .\chapters\03-resultados-conclusiones.tex
@@ -333,7 +338,6 @@ INPUT .\chapters\04-referencias.tex
 INPUT .\chapters\04-referencias.tex
 INPUT .\chapters\04-referencias.tex
 INPUT chapters\04-referencias.tex
-INPUT C:\Users\carlo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT .\chapters\05-anexos.tex
 INPUT .\chapters\05-anexos.tex
 INPUT .\chapters\05-anexos.tex

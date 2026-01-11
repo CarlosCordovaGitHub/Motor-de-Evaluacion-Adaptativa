@@ -4,15 +4,15 @@
 
 En el desarrollo del Sistema de Evaluación Adaptativa (Componente B) se utilizó un enfoque de investigación cuantitativa en el que la evaluación era objetiva, numérica, reproducible y medible de las variables pedagógicas y computacionales. Este enfoque era lógico ya que se relaciona con el tipo de problema abordado, es decir, optimizar procesos de evaluación y validar un sistema de software fundamentado en modelos matemáticos, estadísticos y probabilísticos que centra la evaluación en niveles profundos del conocimiento del estudiante.
 El método cuantitativo permite la evaluación de la forma de actuar del motor adaptativo mediante la valoración de indicadores con los que se puede medir, como pueden ser la estimación de la habilidad latente del aprendiz ($\theta$), el ajuste en base a la precisión de las métricas como el error cuadrático medio (RMSE), la fiabilidad de las probabilidades analizada con la métrica de Brier Score; además tomando métricas concretas de la ingeniería de ciencias computacionales como la latencia de la respuesta del sistema, percentiles de tiempo de procesamiento (P50 y P95), y la tasa de peticiones por segundo (RPS). Estas métricas sirven para el diagnóstico en base a criterios cuantificables de la precisión, la eficiencia y la escalabilidad del sistema propuesto.
-La utilización de esta vertiente metodológica se apoya en la documentación especializada de los sistemas de aprendizaje adaptativo y la evaluación psicométrica, la cual establece que para la obtención de indicadores robustos de aprendizaje deben emplearse modelos estadísticos que permiten inferir variables latentes a partir de la evidencia empírica observable, particularmente en el caso de la Teoría de Respuesta al Ítem (IRT) y en los modelos bayesianos de rastreo de conocimiento\cite{4,5,11,12}.
+La utilización de esta vertiente metodológica se apoya en la documentación especializada de los sistemas de aprendizaje adaptativo y la evaluación psicométrica, la cual establece que para la obtención de indicadores robustos de aprendizaje deben emplearse modelos estadísticos que permiten inferir variables latentes a partir de la evidencia empírica observable, particularmente en el caso de la Teoría de Respuesta al Ítem (IRT) y en los modelos bayesianos de rastreo de conocimiento \cite{ref4,ref5,ref11,ref12}.
 
-\section{Clasificación de la investigación}
+\subsection{Clasificación de la investigación}
 
-Tomando en cuenta el marco metodológico que se ha seguido, esta investigación puede ser clasificada como una investigación tecnológica aplicada, la cual se halla orientada al diseño, a la validación y a la implementación de un artefacto de software funcional y operativo que tiene la finalidad de proporcionar una solución a un problema de práctica educativa en contextos locales, específicamente, la modulación adaptativa de evaluaciones mediante la integración de modelos de Machine Learning en la educación superior  \cite{7,10}.
+Tomando en cuenta el marco metodológico que se ha seguido, esta investigación puede ser clasificada como una investigación tecnológica aplicada, la cual se halla orientada al diseño, a la validación y a la implementación de un artefacto de software funcional y operativo que tiene la finalidad de proporcionar una solución a un problema de práctica educativa en contextos locales, específicamente, la modulación adaptativa de evaluaciones mediante la integración de modelos de Machine Learning en la educación superior  \cite{ref7,ref10}.
 
-\section{Arquitectura experimental y estrategia de simulación}
+\subsection{Arquitectura experimental y estrategia de simulación}
 
-La arquitectura experimental se apoya en la simulación computacional, pues las limitaciones logísticas, éticas y operativas de llevar a cabo un elevado número de pruebas con estudiantes reales en una fase incipiente del desarrollo nos llevaron a adoptar esta opción metodológica. En este contexto, la simulación estocástica y los métodos Monte Carlo conforman una opción metodológica argumentada teóricamente, pero también muy extendida y validada en la literatura para evaluar sistemas adaptativos complejos  \cite{3,9,10}.
+La arquitectura experimental se apoya en la simulación computacional, pues las limitaciones logísticas, éticas y operativas de llevar a cabo un elevado número de pruebas con estudiantes reales en una fase incipiente del desarrollo nos llevaron a adoptar esta opción metodológica. En este contexto, la simulación estocástica y los métodos Monte Carlo conforman una opción metodológica argumentada teóricamente, pero también muy extendida y validada en la literatura para evaluar sistemas adaptativos complejos  \cite{ref3,ref9,ref10}.
 
 Este modelo propone la construcción de un entorno de simulación en el que fueron modelados perfiles de estudiantes virtuales con ciertos parámetros psicométricos controlados, entre los que podemos encontrar el nivel de habilidad inicial  ($\theta$), la consistencia de respuesta ante ítems de dificultad variable y el ratio de aprendizaje. Este entorno permite generar un elevado número de interacciones simuladas entre el sistema y perfiles de estudiantes heterogéneos, lo que permite estudiar la convergencia del algoritmo adaptativo, su comportamiento bajo distintas condiciones operativas y evaluar la robustez frente a situaciones adversas o excepcionales.
 De igual manera, la simulación computacional favoreció la validación operativa del sistema en situaciones de baja probabilidad de ocurrencia o difícilmente reproducibles en contextos reales de aplicación, tales como patrones de respuestas erráticas por parte de los estudiantes, ejecución de múltiples sesiones de evaluación de manera concurrente, y escenarios de escasez de ítems calibrados en el banco de preguntas. Todo ello contribuyó a proporcionar consistencia empírica a la evaluación de la tolerancia a fallos y la robustez estructural del motor adaptativo.
@@ -22,7 +22,6 @@ En el siguiente apartado se presenta la relación detallada de las variables e i
 
 \begin{table}[H]
 \centering
-\label{tab:criterios-cuantitativos}
 \renewcommand{\arraystretch}{1.2}
 \begin{spacing}{1}
 \begin{tabular}{|p{4.0cm}|p{5.5cm}|p{5.5cm}|}
@@ -56,4 +55,605 @@ Detectar degradación del rendimiento bajo condiciones de carga elevada \\
 \end{tabular}
 \end{spacing}
 \caption{Criterios cuantitativos utilizados para la validación del motor adaptativo}
+\label{tab:criterios-cuantitativos}
 \end{table}
+
+
+\section{Tipo y diseño de la investigación}
+
+La investigación desarrollada se enmarca dentro del ámbito de la investigación tecnológica aplicada en la Ingeniería en Ciencias de la Computación. Esta clasificación responde a que el propósito central del trabajo no es la formulación de teorías abstractas, sino el diseño, la implementación y la validación de un artefacto computacional operativo, concretamente un Sistema de Evaluación Adaptativa orientado a la personalización del aprendizaje mediante el uso de modelos psicométricos y técnicas de aprendizaje automático.
+Este tipo de investigación tecnológica aplicada se halla caracterizada por la producción de conocimiento a partir de la construcción y la evaluación sistemática de soluciones software que logran dar respuesta a problemas reales, sin perder los principios de verificabilidad, reproducibilidad y rigor experimental que caracterizan a la ingeniería de software. Por tanto, el valor científico se encuentra tanto en la arquitectura del sistema como en las pruebas empíricas recogidas durante el proceso de validación. Desde esta óptica, diferentes trabajos en el campo del aprendizaje adaptativo y los sistemas de tutoría inteligente establecen que la evaluación de este tipo de sistemas debe fundamentarse en medidas cuantitativas objetivas (precisión diagnóstica, eficiencia algorítmica, calidad predictiva, entre otras) y no en aproximaciones meramente descriptivas \cite{ref7,ref8,ref10}. Esta línea de trabajo refuerza la idoneidad del tipo de investigación escogida.
+
+\subsection{Diseño experimental basado en simulación}
+
+En relación con el diseño de la investigación, se optó por un diseño experimental ya que la investigación supone la manipulación controlada de variables independientes y la observación sistemática de sus efectos sobre variables dependientes relacionadas con el rendimiento del sistema. Las variables manipuladas incluyen el nivel de habilidad previo del estudiante, la consistencia en las respuestas, la dificultad de los ítems y la concurrencia de usuarios; mientras que las variables observadas son la convergencia de la estimación de habilidad, el error de medición, la calidad predictiva del modelo y el rendimiento computacional del sistema.
+El diseño experimental se implementó a través de simulación computacional, una técnica ampliamente empleada en investigaciones vinculadas con la ingeniería de software, los sistemas autoadaptativos y el aprendizaje adaptativo, particularmente en contextos donde la experimentación directa con usuarios reales se encuentra limitada por consideraciones éticas, logísticas o temporales \cite{ref3,ref9,ref10}. La simulación posibilita la reproducción de escenarios complejos bajo condiciones controladas, lo que contribuye a fortalecer la validez interna del estudio y a garantizar la reproducibilidad de los experimentos.
+Con este fin, se desarrolló un simulador de estudiantes virtuales capaz de generar interacciones estocásticas con el sistema de evaluación adaptativa, siguiendo un enfoque de tipo Monte Carlo. Cada estudiante virtual fue modelado a partir de parámetros psicométricos previamente definidos, tales como la habilidad latente inicial ($\theta$), la probabilidad de dominio asociada a cada habilidad y la consistencia en las respuestas. Este planteamiento permite analizar el comportamiento del sistema frente a una amplia diversidad de perfiles de aprendizaje. Este enfoque ha sido ampliamente empleado para analizar la estabilidad, la equidad diagnóstica y la eficiencia de algoritmos de secuenciación adaptativa y de rastreo del conocimiento \cite{ref9,ref11}.
+
+\subsection{Análisis transversal y longitudinal}
+
+El diseño experimental por simulación permitió llevar a cabo experimentos de tipo transversal y longitudinal. En el análisis transversal se observa la respuesta inmediata del sistema ante distintos perfiles de estudiantes, mientras que el análisis longitudinal permite simular la evolución temporal del aprendizaje considerando factores tales como la consolidación del conocimiento adquirido o el decaimiento progresivo del mismo. Este tipo de análisis es crítico para los sistemas de evaluación adaptativa porque permite evaluar la capacidad del modelo para detectar la pérdida gradual de dominio en las habilidades y recomendar intervenciones oportunas, tal como subrayan las publicaciones científicas relacionadas \cite{ref7,ref11}.
+El diseño también permitió evaluar el sistema en situaciones extremas poco reproducibles en ambientes educativos reales, como patrones de respuestas erráticas, escasez de ítems calibrados disponibles o ejecución simultánea de un elevado número de sesiones de evaluación concurrentes. La inclusión de estas pruebas contribuyó al análisis de la robustez, tolerancia a fallos y escalabilidad del motor adaptativo previo a su implementación en contextos académicos reales.
+La Tabla~\ref{tab:clasificacion-metodologica} presenta un resumen de los componentes centrales del tipo y diseño de investigación adoptados junto con la justificación técnica y metodológica correspondiente.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{4.5cm}|p{4.5cm}|p{6.0cm}|}
+\hline
+\textbf{Elemento metodológico} & \textbf{Clasificación adoptada} & \textbf{Justificación técnica} \\
+\hline
+Tipo de investigación &
+Tecnológica aplicada &
+Desarrollo y validación de un sistema software funcional \\
+\hline
+Diseño de investigación &
+Experimental &
+Manipulación controlada de variables y medición de efectos \\
+\hline
+Estrategia experimental &
+Simulación computacional &
+Reproducibilidad y control de escenarios complejos \\
+\hline
+Técnica de simulación &
+Monte Carlo &
+Evaluación estocástica de múltiples perfiles de estudiantes \\
+\hline
+Horizonte de análisis &
+Transversal y longitudinal &
+Evaluación inmediata y análisis temporal del aprendizaje \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Clasificación metodológica y justificación técnica del estudio}
+\label{tab:clasificacion-metodologica}
+\end{table}
+
+\section{Método de investigación}
+
+Para llevar a cabo el desarrollo y validación del Sistema de Evaluación Adaptativa (Componente B) se utilizó el método de investigación hipotéticodeductivo, el cual resulta ser uno de los más extendidos en los ámbitos de investigación en ingeniería y ciencias de la computación cuando se desea analizar y validar la forma de comportamiento del sistema en base a una serie de supuestos teóricos formalizados. Así, resulta altamente consistente el uso de este método de investigación para el estudio de sistemas adaptativos en los que la parte de diseño algorítmico fue formulada a partir de modelos matemáticos y de modelos probabilísticos de los que se deduce la necesidad de contrastar empíricamente su validez mediante el método de experimentación controlada y reproducible.
+El método hipotéticodeductivo se define por ser un procedimiento que parte de la observación sistemática a partir de un problema, la formulación de hipótesis explicativas, la deducción de las consecuencias observables y la posterior comprobación experimental de éstas. Dentro de esta investigación, dicho enfoque hizo posible estructurar el desarrollo del motor adaptativo como proceso lógico y secuencial de forma que la teoría psicométrica subyacente, las decisiones de diseño de representación algorítmica y los resultados hallados durante el curso de validación \cite{ref4,ref7,ref10} tuvieran coherencia.
+
+\subsection{Fase de observación y problematización}
+A través de la etapa de observación y problematización se identificaron las limitaciones recurrentes de los sistemas de evaluación tradicionales que se caracterizan por secuencias de ítems estáticos, criterios de calificación pragmáticos y escasa capacidad de adaptación a lo que realmente sabe el estudiante. La literatura especializada en aprendizaje adaptativo y sistemas de tutoría inteligente señala precisamente que estos sistemas suelen dar lugar a evaluaciones ineficaces y diagnósticos imprecisos en contextos educativos con alta heterogeneidad en los perfiles de aprendizaje \cite{ref7,ref8}.
+Los resultados de este análisis dieron pie a la formulación de la hipótesis central de la investigación, consistente en que la integración de un modelo híbrido que combine la Teoría de Respuesta al Ítem (IRT) para obtener una estimación global de la habilidad latente del estudiante y los modelos bayesianos de rastreo de conocimiento para obtener un monitoreo más granular de las habilidades permite conseguir una mejora notable en la eficiencia, la precisión y la equidad diagnóstica de la evaluación frente a los métodos lineales o no adaptativos. Esta hipótesis se apoya en trabajos anteriores que advierten sobre la complementariedad en la combinación de los modelos psicométricos globales y de técnicas de rastreo probabilísticas del aprendizaje a nivel de habilidad \cite{ref4,ref9,ref11}.
+
+\subsection{Fase de deducción}
+
+En la fase de deducción, la hipótesis propuesta se tradujo en un conjunto de decisiones de diseño dirigido a orientar la implementación del motor adaptativo. Concretamente, se decidió utilizar el modelo logístico de tres parámetros (3PL) de la Teoría de Respuesta al Ítem para estimar la habilidad latente, aplicando el método de estimación a posteriori esperada (EAP) con el objetivo de garantizar la estabilidad numérica y disminuir los sesgos en situaciones de información escasa.
+A su vez, se propuso un modelo bayesiano de rastreo de conocimiento con decaimiento temporal, cuyo objetivo es modelar la probabilidad de dominio de cada habilidad y la posibilidad de una pérdida progresiva de la misma en el tiempo. De estas decisiones se dedujeron una serie de consecuencias observables que podían ser evaluadas empíricamente, tales como:
+\begin{itemize}
+    \item La convergencia progresiva de la estimación de la habilidad del estudiante.
+    \item El error estándar de medición en decremento a medida que se administraran ítems informativos.
+    \item La detección temprana de las brechas de conocimiento.
+    \item La adaptación dinámica de ítems y actividades propuestas.
+\end{itemize}
+
+Se dedujo que el sistema debería conseguir niveles aceptables de precisión diagnóstica con un número reducido de ítems, a la vez que un adecuado rendimiento de cómputo en condiciones de concurrencia.
+
+\subsection{Fase de verificación experimental}
+
+La fase de verificación experimental se llevó a cabo mediante la administración de baterías de pruebas automatizadas y experimentos controlados fundamentados en simulación computacional. En esta etapa fue posible contrastar la lógica deducida de la propia hipótesis respecto de lo que sucedía en la realidad del comportamiento de la propuesta de trabajo.
+Los experimentos realizados incluyeron pruebas de convergencia de la habilidad estimada, evaluaciones de eficiencia del número de ítems necesarios para la calibración del estudiante, pruebas de equidad diagnóstica mediante distintos perfiles de habilidad, y experimentaciones con la calidad predictiva de las probabilidades generadas mediante el modelo, lo que requirió ajustar algunas métricas como el Brier Score.
+El método hipotéticodeductivo permitió extender la validación del sistema más allá de su comportamiento algorítmico, incorporando también hipótesis relacionadas con la propuesta de trabajo como servicio software. En este sentido, se formularon y experimentaron supuestos relacionados con la estabilidad del sistema bajo carga, su comportamiento ante la presencia de fallos en situaciones de alta concurrencia y el cumplimiento de umbrales aceptables de latencia y escalabilidad, aspectos críticos que deben contemplarse en sistemas educativos, especialmente en aquellos que se desarrollan como artefactos basados en web 
+\cite{ref10}.
+
+\subsection{Aporte del método a la rigurosidad científica}
+
+El uso del método hipotéticodeductivo determinó que la investigación se sustentara en un proceso lógico, verificable y replicable, en el cual cada decisión de diseño tiene su respaldo en una hipótesis explícita y cada resultado experimental realiza la validación o refutación de dicha hipótesis. De esta forma se hizo más palpable el rigor científico del trabajo, al igual que se garantizó que la propuesta del Sistema de Evaluación Adaptativa respondiera a un proceso sistemático de investigación propio de la Ingeniería en Ciencias de la Computación en lugar de decisiones determinadas de un modo empírico o arbitrario.
+\section{Población y Muestra}
+La definición de la población y la muestra en estudios de validación de sistemas adaptativos basados en simulación computacional requiere un enfoque diferenciado respecto a investigaciones empíricas con participantes humanos. En el presente estudio, la población objetivo y la muestra de validación se establecieron considerando tanto el contexto educativo al cual se orienta el sistema como las características metodológicas propias de la validación algorítmica mediante técnicas de simulación estocástica.
+\subsection{Población objetivo}
+La población objetivo del Sistema de Evaluación Adaptativa (Componente B) está constituida por estudiantes universitarios de nivel superior que cursan asignaturas de cálculo diferencial, en concreto, aquellos que se encuentran en la fase de aprendizaje del tema de las derivadas y sus aplicaciones. Esta población presenta una heterogeneidad muy elevada en cuanto a conocimientos previos, ritmos de aprendizaje y estrategias de estudio, aspectos que justifican la necesidad de sistemas de evaluación personalizados y adaptativos. 
+Desde una perspectiva psicométrica, esta población puede representarse mediante un continuo de habilidad latente (θ) que refleja el nivel de dominio del contenido matemático evaluado. En el marco de la Teoría de Respuesta al Ítem (IRT), la habilidad latente en poblaciones universitarias típicamente se distribuye en un rango aproximado de θ ∈ [-3.0, +3.0] en la escala logit, donde los valores negativos representan estudiantes con conocimientos insuficientes, los valores cercanos a cero corresponden a estudiantes de nivel medio, y los valores positivos indican un dominio avanzado o experto del tema \cite{ref4,ref5}. 
+La delimitación de esta población objetivo resulta fundamental para interpretar adecuadamente los resultados de la validación y establecer los límites de generalización del sistema desarrollado. Si bien el presente estudio se realizó mediante simulación computacional, la caracterización explícita de la población objetivo guía tanto el diseño de los perfiles de estudiantes virtuales como la futura implementación del sistema en contextos educativos reales.
+\subsection{Muestra de validación}
+Dadas las limitaciones éticas, logísticas y operativas asociadas a la experimentación intensiva con estudiantes reales en etapas tempranas de desarrollo de sistemas adaptativos, se optó por realizar la validación inicial mediante simulación computacional con estudiantes virtuales, enfoque ampliamente aceptado en la literatura especializada en aprendizaje adaptativo y sistemas de tutoría inteligente \cite{ref3,ref9,ref10}. 
+La muestra de validación estuvo conformada por N = 10 perfiles de estudiantes virtuales, cada uno caracterizado por un conjunto de parámetros psicométricos controlados y conocidos a priori. Estos perfiles fueron diseñados para cubrir de manera sistemática el espectro de habilidad latente de la población objetivo, permitiendo evaluar el comportamiento del sistema adaptativo ante distintos niveles de conocimiento.
+
+\begin{itemize}
+    \item \textbf{Habilidad latente real ($\theta$):} 
+    Distribuida uniformemente en el intervalo $[-2.0, +2.0]$, asignando un valor específico a cada perfil:
+    $\{-2.0, -1.5, -1.0, -0.5, 0.0, +0.5, +1.0, +1.5, +2.0\}$, además de un décimo valor aleatorio dentro del intervalo con el fin de incrementar la variabilidad del conjunto de estudiantes simulados. 
+    Esta distribución permite representar estudiantes con bajo dominio ($\theta < -1.0$), dominio medio ($-1.0 \leq \theta \leq +1.0$) y dominio alto ($\theta > +1.0$).
+
+    \item \textbf{Probabilidad de dominio inicial por habilidad (\textit{Mastery}):} 
+    Modelada de forma correlacionada con la habilidad latente, siguiendo la relación
+    $p_{\text{mastery}} \approx (\theta + 2)/4$, incorporando una variación estocástica de tipo gaussiano con desviación estándar $\sigma = 0.15$ para reflejar heterogeneidad realista entre estudiantes. 
+    Los valores resultantes fueron posteriormente normalizados en el intervalo $[0.1, 0.9]$.
+
+    \item \textbf{Consistencia de respuesta:} 
+    Parámetro que representa la probabilidad de que el estudiante responda de forma coherente con su nivel de habilidad, distribuido uniformemente en el intervalo $[0.80, 0.95]$, donde valores cercanos a $1.0$ caracterizan estudiantes altamente consistentes, mientras que valores inferiores modelan variabilidad en el desempeño debida a errores accidentales, distracciones u otros factores contextuales.
+
+    \item \textbf{Tasa de aprendizaje (\textit{learning rate}):} 
+    Parámetro que modela la capacidad del estudiante para adquirir conocimiento a medida que progresa la sesión de evaluación, distribuido uniformemente en el intervalo $[0.10, 0.20]$. 
+    Este parámetro permite simular el efecto de la práctica y la asimilación progresiva de habilidades durante la interacción con el sistema.
+
+    \item \textbf{Factor de fatiga:} 
+    Parámetro que representa el incremento progresivo del tiempo de respuesta como consecuencia de la fatiga cognitiva, distribuido uniformemente en el intervalo $[0.01, 0.03]$ por ítem administrado.
+
+    \item \textbf{Fundamentación teórica de la parametrización:} 
+    La parametrización de los estudiantes virtuales se fundamentó en modelos teóricos de la Teoría de Respuesta al Ítem y en estudios empíricos sobre patrones de respuesta en evaluaciones adaptativas, garantizando que el comportamiento simulado fuera coherente con observaciones reales en contextos educativos \cite{ref4,ref9,ref11}.
+\end{itemize}
+
+\subsection{Banco de items}
+El banco de ítems utilizado para la validación del sistema estuvo conformado por 200 ítems de opción múltiple diseñados para evaluar conocimientos sobre derivadas. Cada ítem fue caracterizado mediante el modelo logístico de tres parámetros (3PL) de la Teoría de Respuesta al Ítem, incluyendo los siguientes parámetros psicométricos:
+\begin{enumerate}[label=\alph*)]
+    \item \textbf{Parámetro de discriminación ($a$):} 
+    Distribuido siguiendo una distribución log-normal con media $\mu = 0.3$ y desviación estándar $\sigma = 0.4$, resultando en valores comprendidos en el rango $[0.5, 2.5]$ tras la aplicación de límites de truncamiento. 
+    Este parámetro refleja la capacidad del ítem para diferenciar entre estudiantes con distintos niveles de habilidad.
+
+    \item \textbf{Parámetro de dificultad ($b$):} 
+    Distribuido uniformemente en el intervalo $[-3.0, +3.0]$, garantizando una cobertura amplia del continuo de habilidad. 
+    La distribución consideró aproximadamente un $33\%$ de ítems fáciles ($b < -0.6$), un $33\%$ de ítems de dificultad media ($-0.6 \leq b \leq +0.6$) y un $33\%$ de ítems difíciles ($b > +0.6$).
+
+    \item \textbf{Parámetro de adivinanza ($c$):} 
+    Distribuido uniformemente en el intervalo $[0.0, 0.25]$, representando la probabilidad de que un estudiante responda correctamente por azar en ítems de opción múltiple.
+\end{enumerate}
+Los 200 ítems fueron distribuidos equitativamente entre dos habilidades específicas (skills) del dominio de derivadas: regla de la potencia (100 ítems) y regla de la cadena (100 ítems). Esta distribución balanceada aseguró la disponibilidad de ítems suficientes para la evaluación adaptativa de ambas habilidades durante las sesiones simuladas.
+Es importante señalar que, dado el carácter de validación algorítmica del presente estudio, los parámetros IRT de los ítems fueron generados de forma sintética mediante procedimientos estocásticos controlados, en lugar de ser calibrados empíricamente con datos reales de estudiantes. Si bien esta es una práctica estándar en fases tempranas de desarrollo de sistemas adaptativos \cite{ref3,ref10}, se reconoce como una limitación que será abordada en fases posteriores del proyecto mediante la calibración del banco de ítems con datos reales.
+
+\subsection{Justificación del tamaño muestral}
+La determinación del tamaño muestral en estudios de validación mediante simulación computacional responde a criterios distintos de aquellos utilizados en investigaciones con participantes humanos. En lugar de fundamentarse en cálculos de potencia estadística para detectar diferencias entre grupos, el tamaño muestral en simulaciones se orienta a garantizar la cobertura representativa del espacio de parámetros y la estabilidad de las estimaciones obtenidas mediante métodos Monte Carlo \cite{ref3,ref9}.
+La literatura especializada en evaluación de sistemas de testing adaptativo computarizado (CAT) y algoritmos de selección de ítems recomienda un tamaño muestral mínimo de N ≥ 10 perfiles de estudiantes virtuales para validaciones iniciales de tipo algorítmico, siempre que estos perfiles cubran de manera sistemática el rango de habilidad de interés y presenten heterogeneidad en sus características de respuesta \cite{ref9,ref11}. Este tamaño permite evaluar la estabilidad del algoritmo, la convergencia de las estimaciones y la ausencia de sesgos sistemáticos en distintos niveles de habilidad.
+En el presente estudio, el tamaño muestral de N = 10 fue considerado suficiente para los siguientes propósitos metodológicos:
+
+\begin{itemize}
+    \item \textbf{Evaluación de convergencia:} 
+    Analizar si el algoritmo de estimación de habilidad mediante EAP converge de forma estable hacia el valor verdadero de $\theta$ en distintos niveles del continuo de habilidad.
+
+    \item \textbf{Análisis de equidad diagnóstica:} 
+    Verificar que el sistema no presente sesgos sistemáticos en la precisión de las estimaciones entre estudiantes con bajo, medio y alto rendimiento.
+
+    \item \textbf{Evaluación de eficiencia:} 
+    Determinar el número promedio de ítems requeridos para alcanzar niveles aceptables de precisión diagnóstica, definidos como $SE(\theta) \leq 0.4$, en distintos perfiles de estudiantes.
+
+    \item \textbf{Detección de fallos algorítmicos:} 
+    Identificar posibles errores lógicos, condiciones de borde no controladas o comportamientos anómalos del sistema bajo escenarios diversos.
+\end{itemize}
+
+Adicionalmente, cada perfil de estudiante virtual fue sometido a sesiones de evaluación de hasta 20 ítems, generando un total de aproximadamente 200 interacciones ítem-estudiante registradas. Este volumen de datos resulta suficiente para calcular métricas agregadas con errores estándar aceptables y realizar análisis de sensibilidad ante distintas condiciones de operación del sistema.
+Es importante destacar que, si bien el tamaño muestral de N = 10 resulta adecuado para la validación técnica y algorítmica del sistema, no es suficiente para realizar inferencias estadísticas generalizables a la población objetivo de estudiantes reales. Esta fase de validación corresponde a una evaluación de tipo técnico, orientada a verificar el correcto funcionamiento del motor adaptativo antes de su despliegue en contextos educativos reales. La validación con estudiantes humanos, que requerirá tamaños muestrales mayores determinados mediante análisis de potencia estadística, se plantea como una etapa posterior del proyecto.
+Finalmente, la adopción de simulación computacional como estrategia de validación inicial presenta ventajas metodológicas significativas, tales como la capacidad de controlar rigurosamente las variables del experimento, la posibilidad de reproducir exactamente las mismas condiciones en múltiples ejecuciones (reproducibilidad) y la evaluación del sistema ante escenarios extremos o poco probables que serían difíciles de observar en contextos reales. Estas características fortalecen la validez interna del estudio y permiten una evaluación exhaustiva del comportamiento del sistema antes de su uso con estudiantes reales \cite{ref3,ref9,ref10}.
+
+\section{Variables de la Investigación}
+La identificación, operacionalización y clasificación de las variables de estudio constituyen elementos fundamentales en el diseño experimental de investigaciones cuantitativas en ingeniería de software, particularmente en el contexto de sistemas adaptativos basados en modelos psicométricos y técnicas de aprendizaje automático. En el presente estudio, las variables fueron definidas siguiendo los principios de la Teoría de Respuesta al Ítem y los modelos bayesianos de rastreo de conocimiento, asegurando su medibilidad, reproducibilidad y coherencia con el marco teórico adoptado \cite{ref4,ref5}.
+Las variables se clasificaron en tres categorías principales: variables independientes, correspondientes a los parámetros controlados o manipulados durante la simulación; variables dependientes, que representan las salidas o mediciones generadas por el Sistema de Evaluación Adaptativa; y variables de control, que permanecieron constantes durante los experimentos para aislar los efectos de las variables independientes sobre las dependientes. Esta clasificación permite establecer relaciones causales claras y facilita la interpretación de los resultados obtenidos durante la fase de validación \cite{ref10}.
+La definición explícita de las variables y su operacionalización resulta esencial para garantizar la reproducibilidad del estudio, facilitar la interpretación de los resultados y posibilitar futuras réplicas o extensiones de la investigación en contextos similares.
+
+\subsection{Variables independientes}
+Las variables independientes corresponden a los parámetros psicométricos y comportamentales de los estudiantes virtuales, así como a las características de los ítems administrados. Estas variables fueron manipuladas de forma controlada durante la simulación con el propósito de evaluar su impacto sobre el desempeño del motor adaptativo.
+\subsubsection{Habilidad latente real del estudiante $\theta$}
+La habilidad latente constituye la variable independiente principal del estudio. Representa el nivel verdadero de conocimiento del estudiante en el dominio evaluado, expresado en la escala logit de la Teoría de Respuesta al Ítem. Esta variable fue operacionalizada mediante valores numéricos reales distribuidos uniformemente en el rango θ ∈ [-2.0, +2.0], donde valores negativos representan estudiantes con conocimientos insuficientes, valores cercanos a cero corresponden a estudiantes de nivel medio, y valores positivos indican dominio avanzado del contenido \cite{ref4,ref5}.
+La distribución uniforme de los valores de θ asignados a los estudiantes virtuales permite evaluar el comportamiento del sistema adaptativo en todo el espectro de habilidad relevante, evitando sesgos hacia estudiantes de un nivel específico y facilitando el análisis de equidad diagnóstica.
+\subsubsection{Parámetros IRT del ítem}
+\subsubsection{Consistencia de respuesta}
+\subsubsection{Tasa de aprendizaje (learning rate)}
+\subsubsection{Factor de fatiga}
+\subsection{Variables dependientes}
+\subsubsection{Habilidad estimada ($\hat{\theta}$)
+}
+\subsubsection{Error estándar de la estimación ($SE(\theta)$)
+}
+\subsubsection{Error de estimación absoluto ($|\theta - \hat{\theta}|$)
+}
+\subsubsection{Probabilidad de dominio por habilidad ($p_{\text{mastery}}$)
+}
+\subsubsection{Brier Score}
+\subsubsection{Latencia de respuesta del sistema}
+\subsubsection{Número de ítems administrados hasta convergencia}
+\subsection{Variables de control}
+\subsubsection{Parámetros del modelo BKT por habilidad}
+\subsubsection{Configuración del algoritmo EAP}
+\subsubsection{Umbrales de decisión}
+\subsubsection{Parámetros de decay temporal}
+\subsection{Síntesis de variables}
+La Tabla~\ref{tab:variables-estudio} presenta una síntesis de las variables de la investigación, clasificadas según su rol en el diseño experimental, incluyendo su descripción, unidad de medida y rango de valores observados o asignados.
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{2.8cm}|p{3.5cm}|p{5.5cm}|p{3.0cm}|p{3.0cm}|}
+\hline
+\textbf{Tipo} & \textbf{Variable} & \textbf{Descripción} & \textbf{Unidad} & \textbf{Rango} \\
+\hline
+Independiente &
+$\theta$ (habilidad real) &
+Nivel verdadero de conocimiento &
+Escala logit &
+$[-2.0, +2.0]$ \\
+\hline
+Independiente &
+$a$ (discriminación) &
+Capacidad discriminativa del ítem &
+Adimensional &
+$[0.5, 2.5]$ \\
+\hline
+Independiente &
+$b$ (dificultad) &
+Nivel de dificultad del ítem &
+Escala logit &
+$[-3.0, +3.0]$ \\
+\hline
+Independiente &
+$c$ (adivinanza) &
+Probabilidad de acierto por azar &
+Probabilidad &
+$[0.0, 0.25]$ \\
+\hline
+Independiente &
+Consistencia &
+Coherencia en las respuestas &
+Probabilidad &
+$[0.80, 0.95]$ \\
+\hline
+Independiente &
+\textit{Learning rate} &
+Tasa de aprendizaje incremental &
+Por ítem &
+$[0.10, 0.20]$ \\
+\hline
+Independiente &
+Factor de fatiga &
+Incremento de tiempo por fatiga &
+Por ítem &
+$[0.01, 0.03]$ \\
+\hline
+Dependiente &
+$\hat{\theta}$ (habilidad estimada) &
+Estimación EAP de la habilidad &
+Escala logit &
+$[-4.0, +4.0]$ \\
+\hline
+Dependiente &
+$SE(\hat{\theta})$ &
+Error estándar de la estimación &
+Escala logit &
+$[0.2, 1.0]$ \\
+\hline
+Dependiente &
+$|\theta - \hat{\theta}|$ &
+Error de estimación absoluto &
+Escala logit &
+$[0.0, 2.0]$ \\
+\hline
+Dependiente &
+$p_{\text{mastery}}$ &
+Probabilidad de dominio por habilidad &
+Probabilidad &
+$[0.0, 1.0]$ \\
+\hline
+Dependiente &
+Brier Score &
+Calibración predictiva &
+Error cuadrático &
+$[0.0, 1.0]$ \\
+\hline
+Dependiente &
+Latencia &
+Tiempo de respuesta del sistema &
+Milisegundos &
+$[50, 500]$ \\
+\hline
+Dependiente &
+$N$ ítems de convergencia &
+Ítems requeridos hasta $SE(\hat{\theta}) \leq 0.4$ &
+Cantidad &
+$[5, 20]$ \\
+\hline
+Control &
+Parámetros BKT &
+$p_{L0}, p_T, p_G, p_S, p_F$ &
+Probabilidades &
+Fijos por \textit{skill} \\
+\hline
+Control &
+Configuración EAP &
+Grid, prior $N(0,1)$ &
+-- &
+Fijos \\
+\hline
+Control &
+Umbrales &
+$\tau$, $SE$ objetivo, límites &
+-- &
+Fijos \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Definición y clasificación de variables del estudio}
+\label{tab:variables-estudio}
+\end{table}
+
+\section{Marco metodológico de desarrollo}
+El desarrollo del Sistema de Evaluación Adaptativa (Componente B) se llevó a cabo siguiendo una metodología propia de la Ingeniería del Software, lo que hizo posible una construcción sistemática, controlada y alineada con buenas prácticas de desarrollo. Bajo esta lógica, se adoptó la metodología ágil SCRUM como marco de gestión del proceso de desarrollo, complementando el método de investigación hipotéticodeductivo descrito anteriormente. Vale la pena aclarar aquí un punto que puede generar confusión: SCRUM no fue empleado como método de investigación científica en sí mismo, sino como un mecanismo práctico para organizar, planificar y dar seguimiento al trabajo técnico que implicaba construir el sistema.
+
+\subsection{Justificación de la elección metodológica}
+La decisión de trabajar con SCRUM tiene que ver directamente con la naturaleza del sistema que se estaba desarrollando. El motor adaptativo integra varios módulos que dependen unos de otros: modelos psicométricos, lógica de selección adaptativa de ítems, persistencia del estado del estudiante, instrumentación de métricas y mecanismos de validación. Estos componentes necesitaban ciclos cortos de desarrollo, prueba y ajuste para poder integrarse correctamente. Es como armar un mecanismo complejo donde cada pieza debe encajar con precisión, pero solo se puede verificar que funciona una vez que las partes están conectadas. SCRUM dio la flexibilidad necesaria para ir incorporando funcionalidades poco a poco y ver en tiempo real cómo afectaban al comportamiento global del sistema \cite{ref14,ref15}.
+Hay otra razón de peso para elegir metodologías ágiles cuando se trabaja con sistemas basados en inteligencia artificial y aprendizaje automático. La incertidumbre es alta: no siempre se puede anticipar cómo va a comportarse un modelo psicométrico bajo condiciones reales, o qué impacto tendrá modificar ciertos parámetros de convergencia. Los requisitos técnicos también suelen evolucionar conforme se van realizando experimentos y se obtienen resultados inesperados. SCRUM permite ajustar el plan de desarrollo según lo que va mostrando la evidencia empírica en cada iteración, lo que reduce bastante el riesgo de tomar decisiones de diseño que después resulten desconectadas de los resultados experimentales \cite{ref10}.
+
+\subsection{Estructura y organización de los sprints}
+El marco SCRUM que se aplicó en este proyecto se organizó mediante sprints de una semana cada uno, con objetivos técnicos específicos y entregables que se podían verificar. Elegir una semana no fue casualidad: es un período que permite ver resultados tangibles sin tener que esperar demasiado, pero a la vez da tiempo suficiente para implementar funcionalidades que cumplan con estándares mínimos de calidad.
+El desarrollo de cada iteración obedecía a una progresión definida de las siguientes tareas:
+\begin{itemize}
+    \item \textbf{Planificación del sprint:} Definir los objetivos técnicos y seleccionar las tareas del backlog que se abordarían.
+    \item \textbf{Desarrollo iterativo:} Implementar las funcionalidades que se habían priorizado.
+    \item \textbf{Pruebas unitarias:} Verificar que cada componente individual funcionara como debía.
+    \item \textbf{Pruebas de integración:} Comprobar que los módulos interactuaran correctamente entre sí.
+    \item \textbf{Validación funcional:} Confirmar que se cumplieran los requisitos técnicos y algorítmicos establecidos.
+\end{itemize}
+Este proceso garantizaba que cada incremento tuviera un nivel mínimo de calidad antes de integrarse al sistema base. La idea era evitar acumular deuda técnica que después pudiera comprometer la estabilidad del motor adaptativo cuando el sistema creciera en complejidad.
+
+\subsection{Adaptación al contexto académico}
+Hay que señalar algo importante: la forma en que se usó SCRUM aquí no es exactamente igual a como se usa en un proyecto comercial típico. En una empresa, cada sprint busca entregar valor tangible al cliente o al usuario final. En este caso, cada sprint se centraba más bien en validar técnica y algorítmicamente el sistema, siguiendo las hipótesis de investigación que se habían planteado. Los entregables no se medían tanto por funcionalidades listas para producción, sino por componentes validados empíricamente que confirmaban o cuestionaban aspectos específicos del diseño propuesto.
+
+Esta adaptación hizo que el proceso de desarrollo estuviera muy conectado con el proceso investigativo, sin sacrificar el rigor metodológico ni perder la trazabilidad de las decisiones técnicas. Cada decisión de diseño, cada ajuste que se hacía en los algoritmos, cada refactorización importante quedaba documentada y justificada según los resultados experimentales que se iban obteniendo. El desarrollo técnico no era un fin en sí mismo, sino más bien una forma de responder las preguntas de investigación que se habían formulado al inicio.
+
+La Tabla~\ref{tab:elementos-scrum} presenta los roles principales y los artefactos de SCRUM que se consideraron durante el desarrollo del Componente B, adaptados específicamente al contexto de un proyecto académico en Ingeniería en Ciencias de la Computación.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{4.0cm}|p{5.0cm}|p{6.0cm}|}
+\hline
+\textbf{Elemento SCRUM} & \textbf{Descripción} & \textbf{Aplicación en el proyecto} \\
+\hline
+Product Owner &
+Responsable de priorizar requisitos y objetivos &
+Definición de funcionalidades del motor adaptativo \\
+\hline
+Scrum Master &
+Facilitador del proceso ágil &
+Gestión del flujo de desarrollo y resolución de bloqueos \\
+\hline
+Equipo de desarrollo &
+Responsable de implementar el producto &
+Diseño e implementación del motor, simulador y pruebas \\
+\hline
+Product Backlog &
+Lista priorizada de requisitos &
+Funcionalidades técnicas y experimentales \\
+\hline
+Sprint Backlog &
+Tareas seleccionadas para el sprint &
+Implementaciones específicas por iteración \\
+\hline
+Incremento &
+Versión funcional del producto &
+Versiones sucesivas del motor adaptativo \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Elementos SCRUM aplicados al desarrollo del Sistema de Evaluación Adaptativa}
+\label{tab:elementos-scrum}
+\end{table}
+
+ \subsection{Planificación progresiva y mejora continua}
+ Un rasgo que definió singularmente la utilización de dicha técnica fue la planificación incremental de los sprints y no una planificación inamovible y totalmente anticipada. Esta forma de proceder permitió que los resultados obtenidos como producto del sprint permitieran tomar decisiones sobre el diseño y la priorización de las tareas que deberían desarrollarse después del correspondiente sprint. Con el propósito de ofrecer un ejemplo concreto, en el caso de que en el contexto de un sprint quedaran evidenciados problemas de convergencia por parte del algoritmo de selección adaptativa de ítems en relación con un grupo de estudiantes con niveles de habilidad muy bajos, la programación del sprint siguiente podría establecerse tomando como posición de partida aquella información para actualizar la programación que pudiera incluir cambios en los criterios de selección como modificaciones en el recalibrado de los parámetros del modelo inicial.
+
+ Este enfoque iterativo hizo posibles varios tipos de mejoras que resultaron fundamentales:
+\begin{itemize}
+    \item \textbf{Ajustes algorítmicos:} Refinar los parámetros del modelo de Rasch y los criterios de convergencia según lo que mostraban los experimentos.
+    \item \textbf{Optimización del rendimiento:} Mejorar la eficiencia computacional del motor de selección de ítems cuando se identificaban cuellos de botella.
+    \item \textbf{Refactorizaciones estructurales:} Reorganizar el código para que fuera más fácil de mantener y extender conforme el sistema crecía en complejidad.
+\end{itemize}
+
+Todas estas mejoras se basaron en la evidencia empírica que se iba obteniendo durante la validación del sistema. No se trataba de hacer cambios porque sonaban bien en teoría, sino porque las pruebas mostraban que eran necesarios.
+
+La Tabla~\ref{tab:sprints} detalla la distribución temporal de los sprints que se desarrollaron a lo largo del ciclo de construcción del Componente B, destacando los objetivos técnicos que se alcanzaron en cada etapa del proyecto.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{3.0cm}|p{5.5cm}|p{6.5cm}|}
+\hline
+\textbf{Sprint} & \textbf{Objetivo principal} & \textbf{Resultados obtenidos} \\
+\hline
+Sprint 0--1 &
+Investigación y diseño inicial &
+Selección de frameworks, definición de arquitectura y contratos JSON \\
+\hline
+Sprint 2--3 &
+Diseño del modelo adaptativo &
+Implementación del modelo híbrido IRT+BKT \\
+\hline
+Sprint 4--5 &
+Implementación algorítmica &
+Estimación EAP, selección adaptativa de ítems y \textit{decay} temporal \\
+\hline
+Sprint 6 &
+Validación experimental &
+Simulación, pruebas automatizadas y pruebas de carga \\
+\hline
+Sprint 7 &
+Refactorización y documentación &
+Optimización del código, documentación técnica y cierre del desarrollo \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Planificación incremental de sprints para el desarrollo del motor adaptativo}
+\label{tab:sprints}
+\end{table}
+
+\subsection{Resultados de la aplicación de SCRUM}
+
+Usar SCRUM contribuyó bastante a manejar la complejidad que implicaba desarrollar este sistema. Entre los beneficios más evidentes están:
+
+\begin{itemize}
+    \item \textbf{Identificación temprana de errores:} Detectar problemas en etapas tempranas mediante la validación continua, cuando corregirlos resulta significativamente menos costoso en términos de tiempo y esfuerzo.
+    \item \textbf{Validación incremental:} Probar a fondo cada funcionalidad antes de pasar a la siguiente, asegurando tener una base sólida y estable para seguir construyendo.
+    \item \textbf{Mejoras basadas en datos:} Fundamentar los cambios del sistema en evidencia experimental concreta, no en especulaciones sobre cómo debería comportarse.
+    \item \textbf{Trazabilidad completa:} Mantener una alineación constante entre los objetivos de investigación, las decisiones de diseño y los resultados que se iban obteniendo mediante la estructura iterativa.
+\end{itemize}
+
+Esta trazabilidad tiene un valor especial en un contexto académico, donde poder reproducir el trabajo y justificar rigurosamente las decisiones técnicas son aspectos centrales del proceso investigativo. Cada sprint generó documentación detallada que permitiría a otros investigadores entender no solo qué se implementó, sino por qué se tomaron determinadas decisiones de diseño.
+El marco metodológico adoptado garantizó que el Sistema de Evaluación Adaptativa se desarrollara siguiendo principios de calidad de software, mantenibilidad y extensibilidad. Estos aspectos son fundamentales tanto para la futura integración del sistema con otros componentes del ecosistema de aprendizaje como para su eventual implementación en entornos educativos reales. La combinación del método hipotético-deductivo para la investigación y SCRUM para el desarrollo técnico resultó efectiva, permitiendo mantener el rigor científico mientras se construía un artefacto computacional que realmente funciona \cite{ref14, ref15}.
+
+\section{Técnicas e Instrumentos de Recolección}
+La recolección de información para validar el Sistema de Evaluación Adaptativa (Componente B) se apoyó en técnicas propias de la Ingeniería en Ciencias de la Computación, las cuales permitieron obtener datos objetivos, reproducibles y que provienen directamente de la ejecución del sistema. Dado el carácter algorítmico, experimental y computacional de esta investigación, no se utilizaron encuestas ni instrumentos cualitativos tradicionales. En su lugar, se utilizaron simulación computacional, generación de datos sintéticos, telemetría automática y pruebas controladas de rendimiento, métodos ampliamente reconocidos en la evaluación de sistemas adaptativos, sistemas de tutoría inteligente y software basado en inteligencia artificial \cite{ref7,ref9,ref10}.
+
+Estas técnicas posibilitaron la recolección de información tanto del comportamiento pedagógico del motor adaptativo como de su funcionamiento computacional como servicio software. La información recabada caracteriza adecuadamente el funcionamiento interno del sistema, permitiendo su análisis cuantitativo bajo criterios de precisión diagnóstica, eficiencia algorítmica, estabilidad operativa y escalabilidad, aspectos considerados fundamentales en la validación de sistemas auto-adaptativos \cite{ref10}.
+
+\subsection{Simulación estocástica de estudiantes virtuales}
+Como técnica principal de recopilación se utilizó la simulación estocástica de estudiantes, que se implementó mediante un software específico desarrollado para este propósito: el simulador de estudiantes virtuales. Este simulador crea agentes artificiales que se parametrizan según perfiles psicométricos definidos, que incluyen el nivel de habilidad latente inicial $(\theta)$, la consistencia en las respuestas, la probabilidad de acierto al azar y la tasa de aprendizaje. Estos parámetros posibilitan modelar una amplia variedad de comportamientos de aprendizaje, siguiendo los supuestos de la Teoría de Respuesta al Ítem y los modelos de rastreo de conocimiento \cite{ref4,ref9,ref11}.
+Con la simulación se recolectó un volumen considerable de interacciones controladas entre los estudiantes virtuales y el motor adaptativo. Esto permitió analizar cómo converge la estimación de habilidad a medida que se administran más ítems, cómo va disminuyendo el error estándar de medición, y en qué medida el diagnóstico resulta equitativo cuando se aplica a distintos perfiles de estudiantes. La simulación también sirvió para reproducir de forma sistemática situaciones extremas que rara vez se encuentran en la práctica educativa cotidiana: respuestas erráticas que no siguen un patrón predecible, casos de aprendizaje acelerado donde el estudiante avanza muy rápido, o situaciones de estancamiento prolongado donde no se observa progreso significativo. Este tipo de escenarios son muy difíciles de estudiar con estudiantes reales, no solo por las obvias implicaciones éticas de exponer a los estudiantes a evaluaciones poco apropiadas, sino también por la complejidad práctica de controlar todas las variables en un entorno educativo auténtico.
+\subsection{Generación de datos sintéticos}
+De forma complementaria a la simulación, se emplearon técnicas de generación de datos sintéticos con el objetivo de evaluar la robustez del sistema ante distintas condiciones operativas. Mediante el uso de perfiles psicométricos y secuencias de interacción controladas, se sometió al motor adaptativo a escenarios específicamente diseñados para poner a prueba sus mecanismos de estimación, selección adaptativa y actualización del estado del estudiante. Esta estrategia resulta particularmente eficaz en la validación de sistemas adaptativos complejos, dado que la diversidad de situaciones del mundo real es difícil de abarcar completamente en las primeras etapas de desarrollo \cite{ref3,ref10}.
+\subsection{Sistema de registro y telemetría automática}
+Para el registro de información se diseñó un sistema de telemetría automática basado en archivos de auditoría estructurados en formato JSON. Este sistema registra de forma secuencial e inmutable toda interacción que procesa el motor adaptativo: la selección del ítem, la respuesta del estudiante, la estimación de habilidad latente, la probabilidad de dominio por habilidad y la recomendación que genera el motor de inferencia.
+Estos registros son la fuente primaria para analizar posteriormente el comportamiento del sistema, a la vez que aseguran la trazabilidad completa de las decisiones algorítmicas que se implementan. Los archivos de auditoría permiten obtener métricas de desempeño bastante detalladas, pero más allá de eso, hacen posible reconstruir sesiones completas de forma determinista usando mecanismos de replay. Esto tiene un valor metodológico importante porque asegura que los experimentos sean verificables y replicables, dos aspectos que resultan básicos en cualquier investigación rigurosa de ingeniería de software y sistemas auto-adaptativos 
+\cite{ref10}.
+\subsection{Pruebas de carga y concurrencia}
+Como técnica de recolección orientada al desempeño computacional, se llevaron a cabo pruebas de carga y concurrencia. Para ello se utilizaron herramientas de simulación de usuarios concurrentes que permitieron generar peticiones simultáneas al servicio de evaluación adaptativa. Durante estas pruebas se capturaron métricas de latencia, tasa de peticiones procesadas por segundo (RPS), estabilidad del sistema y comportamiento bajo condiciones de estrés. Estas métricas resultan esenciales para valorar la viabilidad del despliegue del sistema en entornos de aprendizaje auténticos con múltiples usuarios concurrentes.
+\subsection{Síntesis de las técnicas empleadas}
+La combinación de estas técnicas permitió obtener una caracterización completa del comportamiento del Sistema de Evaluación Adaptativa, tanto desde la perspectiva algorítmica como desde el funcionamiento del sistema software. La Tabla~\ref{tab:tecnicas-validacion} presenta las principales técnicas de recolección de información utilizadas en el estudio, el tipo de datos obtenidos y el objetivo metodológico correspondiente.
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{3.5cm}|p{4.5cm}|p{5.5cm}|p{5.0cm}|}
+\hline
+\textbf{Técnica} & \textbf{Instrumento} & \textbf{Datos recolectados} & \textbf{Propósito metodológico} \\
+\hline
+Simulación estocástica &
+Simulador de estudiantes virtuales &
+Respuestas simuladas, convergencia de $\theta$, error estándar &
+Evaluar precisión y estabilidad del modelo \\
+\hline
+Datos sintéticos &
+Perfiles psicométricos parametrizados &
+Escenarios controlados de aprendizaje &
+Probar robustez y comportamiento límite \\
+\hline
+Telemetría automática &
+Logs de auditoría en formato JSON &
+Historial de sesiones, métricas internas &
+Trazabilidad y análisis detallado \\
+\hline
+Replay determinista &
+Reconstrucción desde logs &
+Secuencias completas de interacción &
+Verificabilidad y replicabilidad \\
+\hline
+Pruebas de carga &
+Simulación de usuarios concurrentes &
+Latencia, RPS, estabilidad &
+Evaluar escalabilidad y desempeño \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Técnicas, instrumentos y datos utilizados en la validación experimental}
+\label{tab:tecnicas-validacion}
+\end{table}
+
+El conjunto de técnicas e instrumentos de recolección empleados permitió recopilar información válida, estructurada y vinculada directamente con el comportamiento real del sistema, evitando sesgos derivados de mediciones subjetivas o indirectas. Esta práctica de recolección de datos se encuentra bien establecida en la literatura sobre evaluación de sistemas adaptativos e ingeniería de software, constituyendo un enfoque con alto grado de rigor metodológico \cite{ref7,ref10}.
+
+La información recolectada mediante estos instrumentos constituye la base empírica sobre la cual se fundamenta el análisis estadístico y experimental que se desarrolla en las secciones subsiguientes del marco metodológico.
+
+\section{Actividades y productos del proyecto}
+
+La elaboración del Sistema de Evaluación Adaptativa (Componente B) utilizó una serie de actividades técnicas organizadas en forma de actividades secuenciadas y planificadas para cumplir, de forma progresiva, con los objetivos específicos establecidos en el Plan de Trabajo de Integración Curricular. Dichas actividades se plantearon como acciones de carácter concreto y demostrable, coherentes con el enfoque cuantitativo, el diseño de experimentos y el marco metodológico de desarrollo ágil presentados en las secciones anteriores, garantizando la existencia de una trazabilidad del desarrollo entre los objetivos que se fijan, las decisiones técnicas adoptadas y los resultados finalmente conseguidos.
+Desde una visión metodológica, el trabajo de las actividades se realizó siguiendo principios propios de la Ingeniería en Ciencias de la Computación mediante los cuales cada uno de los objetivos se traduce en tareas de análisis, diseño, implementación y validación. Este planteamiento garantiza que el cumplimiento de los objetivos no se reduzca a formulaciones teóricas sino que se concrete en componentes software funcionales, evaluables y respaldados por la evidencia empírica que, tal y como sugieren los estudios en desarrollo de sistemas adaptativos y de tutoría inteligente \cite{ref7,ref10},  resulta necesario obtener.
+Los procesos de desarrollo se concibieron como procesos incrementales e iterativos, y los productos que se obtenían en cada conjunto de actividades devuelven la información a las decisiones que los responsables toman en la siguiente iteración del proceso. Con ello se facilitaba la escalación del sistema desde un primer diseño conceptual de él a un motor adaptativo totalmente operativo, testado mediante simulación computacional, pruebas automáticas y análisis de rendimiento. Este enfoque es muy adecuado para aquellos proyectos donde se pueden combinar de formas complejas modelos psicométricos y técnicas de inteligencia artificial, ya que en estos proyectos la adecuada sintonía de los algoritmos depende de la evidencia que se obtenga durante su experimentación \cite{ref4,ref9,ref11}.
+\subsection{Actividades por objetivo específico}
+\subsubsection{Objetivo 1: Análisis de herramientas de inteligencia artificial y aprendizaje automático}
+Respecto al primer objetivo específico, enmarcado en el análisis de herramientas de inteligencia artificial y aprendizaje automático aplicadas a la evaluación adaptativa, se llevaron a cabo actividades de revisión sistemática del estado del arte del aprendizaje adaptativo, de los sistemas de tutoría inteligente y de la psicometría computacional. En dicho análisis se incluyeron actividades específicas como la comparación de modelos de Teoría de Respuesta al Ítem y técnicas de rastreo de conocimiento, las cuales evaluaron distintos criterios como la precisión diagnóstica, la interpretabilidad y la viabilidad computacional. De estas actividades se extrajo de manera justificada la selección de un modelo híbrido basado en IRT (3PL) y BKT, combinación que es avalada por la literatura como una alternativa efectiva para la evaluación adaptativa \cite{ref4,ref9,ref11,ref12}.
+
+\subsubsection{Objetivo 2: Diseño del sistema de evaluación progresiva personalizada}
+El segundo objetivo específico se centró en el diseño de un sistema de evaluación progresiva fundamentada en la personalización adaptativa. Para su consecución se llevaron a cabo actividades de diseño de la arquitectura del motor adaptativo, definición de contratos de comunicación entre componentes y modelado de la lógica de selección adaptativa de ítems. Estas actividades dieron lugar a la especificación de reglas de parada, criterios de actualización del estado del estudiante y mecanismos de interoperabilidad con otros componentes del ecosistema de aprendizaje, lo que permitió garantizar un diseño modular, extensible y ajustado a buenas prácticas de ingeniería de software \cite{ref10}.
+\subsubsection{Objetivo 3: Implementación de modelos para el análisis y seguimiento del aprendizaje}
+En lo que respecta al objetivo relacionado con la implementación de modelos para el análisis y seguimiento del aprendizaje, se llevaron a cabo actividades técnicas de codificación del modelo IRT con estimación EAP y del modelo bayesiano de rastreo de conocimiento con decaimiento temporal. Las implementaciones de ambos modelos fueron integradas en el motor adaptativo junto con mecanismos para calcular métricas de desempeño y de aprendizaje en tiempo real, lo que permitió generar indicadores objetivos acerca de la evolución del conocimiento del estudiante. La correcta implementación de estos modelos fue un aspecto central dada la relación directa entre ésta y las capacidades del sistema en términos de inferencias y adaptaciones adecuadas \cite{ref4,ref11}.
+\subsubsection{Objetivo 4: Validación mediante pruebas funcionales y experimentales}
+El cuarto objetivo específico se centró en la validación del sistema mediante pruebas funcionales y experimentales. Para ello se construyó un simulador de estudiantes virtuales que permitió llevar a cabo interacciones controladas con el motor adaptativo y que facilitó la realización de pruebas de convergencia de la habilidad estimada, análisis de eficiencia del número de ítems administrados, evaluación de la equidad diagnóstica entre perfiles de aprendizaje y medición de la calidad predictiva de las probabilidades generadas por el modelo. Como complemento, se llevaron a cabo pruebas de carga y concurrencia como forma de evaluar el comportamiento del sistema como servicio software en condiciones de estrés, siendo este un aspecto clave para el futuro despliegue en entornos educativos reales \cite{ref9,ref10}.
+\subsection{Productos y evidencias técnicas generadas}
+Las actividades desarrolladas para cada objetivo generaron productos y evidencias técnicas concretas en forma de artefactos de diseño, módulos de software funcionales, registros de simulación, reportes de pruebas automatizadas y métricas de rendimiento. Esta producción de evidencias fue la que permitió comprobar de forma objetiva el cumplimiento de los objetivos específicos y a la vez facilitó la evaluación del avance del proyecto a lo largo del tiempo.
+La Tabla~\ref{tab:objetivos-actividades}  muestra una síntesis de la relación entre objetivos específicos del proyecto, principales actividades desarrolladas y productos o evidencias generadas, donde se evidencia la trazabilidad metodológica entre lo planificado y lo ejecutado.
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{4.5cm}|p{6.5cm}|p{5.5cm}|}
+\hline
+\textbf{Objetivo específico} & \textbf{Actividades desarrolladas} & \textbf{Productos / evidencias} \\
+\hline
+Analizar herramientas de IA aplicables a la evaluación adaptativa &
+Revisión del estado del arte en aprendizaje adaptativo, ITS e IRT. Análisis comparativo de modelos psicométricos y de rastreo de conocimiento. &
+Selección fundamentada del modelo híbrido IRT (3PL) + BKT \\
+\hline
+Diseñar un sistema de evaluación progresiva y personalizada &
+Diseño de la arquitectura del motor adaptativo y definición de contratos de comunicación y reglas de selección de ítems. &
+Arquitectura del Componente B y esquemas JSON \\
+\hline
+Implementar modelos de análisis y seguimiento del aprendizaje &
+Implementación del modelo IRT con EAP y del modelo BKT con decaimiento temporal. Integración de métricas. &
+Motor adaptativo funcional y módulos de cálculo \\
+\hline
+Validar el sistema mediante pruebas funcionales y experimentales &
+Simulación de estudiantes virtuales, pruebas de convergencia, eficiencia, equidad y pruebas de carga. &
+Resultados de simulación, reportes de pruebas y métricas de rendimiento \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Correspondencia entre objetivos específicos, actividades y productos generados}
+\label{tab:objetivos-actividades}
+\end{table}
+
+\section{Técnicas de Análisis de la Información}
+La actividad de análisis de la información obtenida durante la validación del Sistema de Evaluación Adaptativa (Componente B) se llevó a cabo utilizando técnicas del ámbito cuantitativo de la Ingeniería en Ciencias de la Computación, que sirven para evaluar no sólo el comportamiento algorítmico del motor adaptativo, sino también el comportamiento computacional que tiene lugar en la ejecución del sistema software. El análisis constituye una etapa importante del proceso metodológico porque sirve para contrastar empíricamente las hipótesis formuladas y para comprobar la consecución de los objetivos específicos de la investigación.
+Las técnicas de análisis escogidas están en línea con el enfoque cuantitativo y el diseño experimental que se han adoptado en esta investigación, dando preferencia al uso de métricas objetivas, numéricas, verificables, reproducibles y comparables. En este sentido, el análisis implementado se centra no solo en una interpretación descriptiva de los resultados sino que busca identificar patrones, evaluar la estabilidad del sistema ante diferentes escenarios y medir la precisión diagnóstica y la eficiencia operativa, tal y como viene prescrito en la literatura que trata temas de aprendizaje adaptativo y sistemas auto-adaptativos 
+\cite{ref7,ref10}.
+\subsection{Análisis del rendimiento algorítmico}
+Desde el punto de vista del rendimiento algorítmico, el análisis realizado se centró en evaluar la precisión del modelo híbrido implementado considerando métricas de error ampliamente utilizadas en psicometría computacional. Dentro de estas métricas se encuentran el error cuadrático medio (RMSE) y el error absoluto medio (MAE), que se calculan considerando la diferencia entre la habilidad real de los estudiantes simulados y la habilidad estimada por el modelo adaptativo. Estas métricas posibilitan evaluar de modo concreto el nivel de precisión del sistema en la estimación de estados latentes de conocimiento, que es precisamente la cuestión central de los sistemas que están fundamentados en Teoría de Respuesta al Ítem y en modelos de rastreo del conocimiento \cite{ref4,ref5,ref11}.
+De manera complementaria, el análisis también incluyó la observación de la evolución del error estándar de medición correspondiente a la estimación de la habilidad latente. Este análisis permitió observar si el modelo iba convergiendo a medida que se van administrando ítems informativos, así como si el sistema era capaz de reducir la incertidumbre diagnóstica con el avance del proceso de interacción con el estudiante. La reducción sostenida de este error constituye un buen indicador de la eficiencia de los sistemas de evaluación adaptativa, dado que se interpreta como la capacidad del motor para proporcionar un diagnóstico preciso con un número reducido de ítems, optimizando así el proceso de evaluación \cite{ref4,ref9}.
+La calidad predictiva del sistema fue analizada a partir del Brier Score, una métrica ampliamente usada para el análisis de calibración de probabilidades obtenidas a partir de modelos probabilísticos. En el caso presente, el Brier Score permitió la comparación entre las probabilidades de respuesta correcta predichas por el sistema frente a los resultados observados en la simulación. El Brier Score hizo posible la evaluación del grado de alineación entre lo predicho por el sistema y el comportamiento real del estudiante simulado en relación con el resultado observado. Cuanto más bajo sea el valor correspondiente, más adecuada será la calibración probabilística, un aspecto muy a tener en cuenta para poder obtener decisiones adaptativas confiables \cite{ref11,ref12}.
+Junto con el Brier Score, también se implementó un análisis longitudinal del aprendizaje simulado dirigido a comprobar la capacidad del sistema para detectar los cambios en el dominio de las habilidades a lo largo del tiempo contemplando medidas de adquisición progresiva de los conocimientos y fenómenos del tipo de decaimiento o pérdida del dominio del mismo tipo, que permitiría comprobar la sensibilidad del modelo frente a los cambios temporales en el rendimiento del estudiante. Este tipo de análisis es muy relevante en sistemas de evaluación adaptativa que intentan proporcionar retroalimentación continua y personalizada \cite{ref9,ref11}.
+\subsection{Análisis del rendimiento computacional}
+Desde el punto de vista del análisis del rendimiento computacional, fueron utilizadas métricas de ingeniería de software orientadas a evaluar el comportamiento del sistema bajo condiciones de carga. Entre dichas métricas se encuentran la latencia de respuesta (en milisegundos), los percentiles de tiempo de respuesta (P50 y P95) y la tasa de peticiones por segundo procesadas (RPS). Estos indicadores fueron analizados a partir de los datos obtenidos durante las pruebas de carga y concurrencia, permitiendo así identificar cuellos de botella y evaluar la escalabilidad del sistema antes de su despliegue en entornos educativos reales \cite{ref10}.
+El análisis de las métricas indicadas estableció límites de rendimiento aceptables para el sistema, tanto por lo que respecta a la experiencia del usuario final como por los requerimientos técnicos de plataformas educativas basadas en servicios web. Se comprobó especialmente que el sistema contara con tiempos de respuesta estables y previsibles bajo situaciones de alta concurrencia, fundamental para garantizar su viabilidad operativa.
+\subsection{Herramientas y reproducibilidad del análisis}
+Las técnicas de análisis se implementaron utilizando herramientas y librerías estándar del ecosistema Python, tales como módulos estadísticos para el cálculo de métricas descriptivas, funciones matemáticas para la estimación de errores y procedimientos automatizados para el tratamiento de registros de telemetría. De esta forma se garantiza la transparencia del proceso analítico y se facilita la reproducibilidad de los resultados, dos principios de vital importancia en la investigación en ingeniería de software y sistemas auto-adaptativos \cite{ref10}.
+Por último, los resultados obtenidos mediante estas técnicas de análisis fueron interpretados a partir de criterios de aceptación predefinidos resumidos en la Tabla \ref{tab:dimensiones-metricas}, tales como niveles máximos de error admisibles, reducción esperada del error estándar de medición y umbrales aceptables de latencia y estabilidad. Estos criterios permitieron evaluar de forma objetiva el grado en que los objetivos del estudio fueron cumplidos y contribuir a sustentar las conclusiones que más adelante se presentan.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{4.0cm}|p{3.5cm}|p{5.5cm}|p{5.0cm}|}
+\hline
+\textbf{Dimensión analizada} & \textbf{Métrica} & \textbf{Descripción} & \textbf{Propósito del análisis} \\
+\hline
+Precisión diagnóstica &
+RMSE / MAE &
+Error entre habilidad real y estimada &
+Evaluar exactitud del modelo \\
+\hline
+Convergencia &
+Error estándar de medición &
+Nivel de incertidumbre en la estimación de $\theta$ &
+Analizar eficiencia adaptativa \\
+\hline
+Calidad predictiva &
+Brier Score &
+Calibración de probabilidades predichas &
+Validar confiabilidad del modelo \\
+\hline
+Rendimiento &
+Latencia (ms) &
+Tiempo de respuesta del sistema &
+Evaluar experiencia del usuario \\
+\hline
+Escalabilidad &
+RPS, P50/P95 &
+Capacidad bajo concurrencia &
+Analizar viabilidad operativa \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Dimensiones y métricas utilizadas para la evaluación del desempeño del motor adaptativo}
+\label{tab:dimensiones-metricas}
+\end{table}
+
+\section{Criterios de Validación y Aceptación}

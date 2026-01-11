@@ -4,8 +4,8 @@
 \contentsline {chapter}{\normalfont DEDICATORIA}{\es@scroman {iii}}{chapter*.3}%
 \contentsline {chapter}{\normalfont AGRADECIMIENTOS}{\es@scroman {iv}}{chapter*.4}%
 \contentsline {chapter}{\normalfont ÍNDICE DE CONTENIDO}{\es@scroman {v}}{section*.5}%
-\contentsline {chapter}{\normalfont RESUMEN}{\es@scroman {viii}}{chapter*.8}%
-\contentsline {chapter}{\normalfont ABSTRACT}{\es@scroman {ix}}{chapter*.9}%
+\contentsline {chapter}{\normalfont RESUMEN}{\es@scroman {ix}}{chapter*.8}%
+\contentsline {chapter}{\normalfont ABSTRACT}{\es@scroman {x}}{chapter*.9}%
 \contentsline {chapter}{\numberline {1}DESCRIPCIÓN DEL COMPONENTE}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Descripción general del componente}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objetivo general}{1}{section.1.2}%
@@ -30,25 +30,83 @@
 \contentsline {subsubsection}{\numberline {1.5.3.2}Integración con los Componentes A y B}{7}{subsubsection.1.5.3.2}%
 \contentsline {subsection}{\numberline {1.5.4}Algoritmos de selección adaptativa}{7}{subsection.1.5.4}%
 \contentsline {subsubsection}{\numberline {1.5.4.1}Selección guiada por IRT (medición precisa)}{7}{subsubsection.1.5.4.1}%
-\contentsline {subsubsection}{\numberline {1.5.4.2}Selección guiada por BKT/KT (apoyo al aprendizaje)}{7}{subsubsection.1.5.4.2}%
+\contentsline {subsubsection}{\numberline {1.5.4.2}Selección guiada por BKT/KT (apoyo al aprendizaje)}{8}{subsubsection.1.5.4.2}%
 \contentsline {subsubsection}{\numberline {1.5.4.3}Estrategia híbrida}{8}{subsubsection.1.5.4.3}%
 \contentsline {subsection}{\numberline {1.5.5}Métricas de desempeño en sistemas adaptativos}{8}{subsection.1.5.5}%
 \contentsline {subsubsection}{\numberline {1.5.5.1}Precisión y validez de medición (IRT/CAT)}{8}{subsubsection.1.5.5.1}%
-\contentsline {subsubsection}{\numberline {1.5.5.2}Eficiencia y carga de respuesta}{8}{subsubsection.1.5.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.5.2}Eficiencia y carga de respuesta}{9}{subsubsection.1.5.5.2}%
 \contentsline {subsubsection}{\numberline {1.5.5.3}Aprendizaje y progreso}{9}{subsubsection.1.5.5.3}%
 \contentsline {subsubsection}{\numberline {1.5.5.4}Calidad predictiva de la política adaptativa}{9}{subsubsection.1.5.5.4}%
-\contentsline {subsubsection}{\numberline {1.5.5.5}Equidad y robustez}{9}{subsubsection.1.5.5.5}%
-\contentsline {subsubsection}{\numberline {1.5.5.6}Reporte para la integración A$\leftrightarrow $B}{9}{subsubsection.1.5.5.6}%
-\contentsline {chapter}{\numberline {2}METODOLOGÍA}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Enfoque y diseño de la investigación}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Clasificación de la investigación}{10}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Arquitectura experimental y estrategia de simulación}{11}{section.2.3}%
-\contentsline {section}{\numberline {2.4}RESULTADOS, CONCLUSIONES Y RECOMENDACIONES}{13}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Resultados}{13}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Conclusiones}{13}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Recomendaciones}{13}{subsection.2.4.3}%
-\contentsline {chapter}{\normalfont REFERENCIAS BIBLIOGRÁFICAS}{14}{chapter*.10}%
-\contentsline {chapter}{\numberline {3}ANEXOS}{17}{chapter.3}%
-\contentsline {section}{ANEXO I: Aplicación Móvil}{17}{section*.12}%
-\contentsline {section}{ANEXO II: Aplicación Web}{17}{section*.13}%
-\contentsline {section}{ANEXO III: Página Web}{17}{section*.14}%
+\contentsline {subsubsection}{\numberline {1.5.5.5}Equidad y robustez}{10}{subsubsection.1.5.5.5}%
+\contentsline {subsubsection}{\numberline {1.5.5.6}Reporte para la integración A$\leftrightarrow $B}{10}{subsubsection.1.5.5.6}%
+\contentsline {chapter}{\numberline {2}METODOLOGÍA}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Enfoque y diseño de la investigación}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Clasificación de la investigación}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Arquitectura experimental y estrategia de simulación}{12}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Tipo y diseño de la investigación}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Diseño experimental basado en simulación}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Análisis transversal y longitudinal}{14}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Método de investigación}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Fase de observación y problematización}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Fase de deducción}{16}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Fase de verificación experimental}{16}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Aporte del método a la rigurosidad científica}{17}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Población y Muestra}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Población objetivo}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Muestra de validación}{18}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Banco de items}{19}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Justificación del tamaño muestral}{20}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Variables de la Investigación}{21}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Variables independientes}{21}{subsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}Habilidad latente real del estudiante $\theta $}{22}{subsubsection.2.5.1.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.2}Parámetros IRT del ítem}{23}{subsubsection.2.5.1.2}%
+\contentsline {subsubsection}{\numberline {2.5.1.3}Consistencia de respuesta}{23}{subsubsection.2.5.1.3}%
+\contentsline {subsubsection}{\numberline {2.5.1.4}Tasa de aprendizaje (learning rate)}{23}{subsubsection.2.5.1.4}%
+\contentsline {subsubsection}{\numberline {2.5.1.5}Factor de fatiga}{23}{subsubsection.2.5.1.5}%
+\contentsline {subsection}{\numberline {2.5.2}Variables dependientes}{23}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}Habilidad estimada ($\hat {\theta }$) }{23}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2.5.2.2}Error estándar de la estimación ($SE(\theta )$) }{23}{subsubsection.2.5.2.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.3}Error de estimación absoluto ($|\theta - \hat {\theta }|$) }{23}{subsubsection.2.5.2.3}%
+\contentsline {subsubsection}{\numberline {2.5.2.4}Probabilidad de dominio por habilidad ($p_{\text {mastery}}$) }{23}{subsubsection.2.5.2.4}%
+\contentsline {subsubsection}{\numberline {2.5.2.5}Brier Score}{23}{subsubsection.2.5.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.2.6}Latencia de respuesta del sistema}{23}{subsubsection.2.5.2.6}%
+\contentsline {subsubsection}{\numberline {2.5.2.7}Número de ítems administrados hasta convergencia}{23}{subsubsection.2.5.2.7}%
+\contentsline {subsection}{\numberline {2.5.3}Variables de control}{23}{subsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.3.1}Parámetros del modelo BKT por habilidad}{23}{subsubsection.2.5.3.1}%
+\contentsline {subsubsection}{\numberline {2.5.3.2}Configuración del algoritmo EAP}{23}{subsubsection.2.5.3.2}%
+\contentsline {subsubsection}{\numberline {2.5.3.3}Umbrales de decisión}{23}{subsubsection.2.5.3.3}%
+\contentsline {subsubsection}{\numberline {2.5.3.4}Parámetros de decay temporal}{23}{subsubsection.2.5.3.4}%
+\contentsline {subsection}{\numberline {2.5.4}Síntesis de variables}{23}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Marco metodológico de desarrollo}{24}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Justificación de la elección metodológica}{24}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Estructura y organización de los sprints}{25}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Adaptación al contexto académico}{25}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Planificación progresiva y mejora continua}{26}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5}Resultados de la aplicación de SCRUM}{27}{subsection.2.6.5}%
+\contentsline {section}{\numberline {2.7}Técnicas e Instrumentos de Recolección}{28}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Simulación estocástica de estudiantes virtuales}{28}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Generación de datos sintéticos}{29}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Sistema de registro y telemetría automática}{29}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}Pruebas de carga y concurrencia}{30}{subsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.7.5}Síntesis de las técnicas empleadas}{30}{subsection.2.7.5}%
+\contentsline {section}{\numberline {2.8}Actividades y productos del proyecto}{31}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Actividades por objetivo específico}{31}{subsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.1.1}Objetivo 1: Análisis de herramientas de inteligencia artificial y aprendizaje automático}{31}{subsubsection.2.8.1.1}%
+\contentsline {subsubsection}{\numberline {2.8.1.2}Objetivo 2: Diseño del sistema de evaluación progresiva personalizada}{32}{subsubsection.2.8.1.2}%
+\contentsline {subsubsection}{\numberline {2.8.1.3}Objetivo 3: Implementación de modelos para el análisis y seguimiento del aprendizaje}{32}{subsubsection.2.8.1.3}%
+\contentsline {subsubsection}{\numberline {2.8.1.4}Objetivo 4: Validación mediante pruebas funcionales y experimentales}{32}{subsubsection.2.8.1.4}%
+\contentsline {subsection}{\numberline {2.8.2}Productos y evidencias técnicas generadas}{33}{subsection.2.8.2}%
+\contentsline {section}{\numberline {2.9}Técnicas de Análisis de la Información}{33}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Análisis del rendimiento algorítmico}{34}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Análisis del rendimiento computacional}{35}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}Herramientas y reproducibilidad del análisis}{35}{subsection.2.9.3}%
+\contentsline {section}{\numberline {2.10}Criterios de Validación y Aceptación}{36}{section.2.10}%
+\contentsline {section}{\numberline {2.11}RESULTADOS, CONCLUSIONES Y RECOMENDACIONES}{37}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}Resultados}{37}{subsection.2.11.1}%
+\contentsline {subsection}{\numberline {2.11.2}Conclusiones}{37}{subsection.2.11.2}%
+\contentsline {subsection}{\numberline {2.11.3}Recomendaciones}{37}{subsection.2.11.3}%
+\contentsline {chapter}{\normalfont REFERENCIAS BIBLIOGRÁFICAS}{38}{chapter*.10}%
+\contentsline {chapter}{\numberline {3}ANEXOS}{41}{chapter.3}%
+\contentsline {section}{ANEXO I: Aplicación Móvil}{41}{section*.12}%
+\contentsline {section}{ANEXO II: Aplicación Web}{41}{section*.13}%
+\contentsline {section}{ANEXO III: Página Web}{41}{section*.14}%

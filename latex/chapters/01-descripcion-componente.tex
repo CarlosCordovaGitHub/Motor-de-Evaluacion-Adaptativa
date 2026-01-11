@@ -104,73 +104,73 @@ Al estimar $\theta$ en tiempo real y conocer la información de cada ítem, es p
 \subsection{Sistemas de Tutoría Inteligente (ITS)}
 
 Un Sistema de Tutoría Inteligente (ITS) es un software que intenta “parecerse” a una tutoría humana: observa cómo aprende el estudiante, le ofrece explicaciones y actividades a la medida, y retroalimenta en los momentos clave. La idea no es reemplazar al docente, sino multiplicar su apoyo para que cada persona avance a su propio ritmo y con la ayuda justa. Las revisiones recientes muestran que, bien implementados, los ITS mejoran el rendimiento y la participación, personalizan contenidos y apoyan la autorregulación del aprendizaje \cite{ref7}.
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 \subsubsection{Componentes típicos}
 
 \begin{itemize}
-  \item \textbf{Modelo del estudiante:} mantiene un perfil dinámico con aciertos, errores, tiempos y progreso.
-  \item \textbf{Modelo del tutor:} decide qué explicar, qué actividad proponer y qué tipo de pista o intervención aplicar.
-  \item \textbf{Modelo de dominio:} representa el conocimiento de la materia (conceptos, habilidades y relaciones).
-  \item \textbf{Interfaz:} canaliza ejercicios, retroalimentación y seguimiento.
+  \item \textbf{Modelo del estudiante:} mantiene un ''perfil vivo'' con aciertos, errores, tiempos y progreso. 
+  \item \textbf{Modelo del tutor:} decide qué explicar, qué actividad proponer y qué pista dar. 
+  \item \textbf{Modelo de dominio:} representa el conocimiento de la materia (conceptos, habilidades, reglas).
+  \item \textbf{Interfaz:} es la cara del sistema (pantallas, ejercicios, feedback). 
 \end{itemize}
 
-Estas piezas permiten ajustar dificultad, secuencias y apoyos en tiempo real \cite{ref8}.
+Con estos componentes, el ITS puede ajustar dificultad, secuencias y apoyos en tiempo real \cite{ref8}.
 
 \subsubsection{Integración con los Componentes A y B}
 
 \begin{enumerate}[label=\arabic*.]
-  \item (B) El ITS observa respuestas, estima el nivel y detecta dificultades relevantes.
+  \item (B) observa respuestas, estima el nivel del estudiante en los temas clave y detecta dificultades.
   \item (B$\rightarrow$A) Envía al Componente A la dificultad recomendada, objetivos prioritarios y el tipo de intervención.
-  \item (A) El Componente A genera la actividad o clase con esa dificultad y apoyo.
-  \item (B) Tras la actividad, se vuelve a medir y se ajusta la ruta, manteniendo trayectorias personalizadas \cite{ref7,ref8}.
+  \item (A) El Componente A genera la actividad/clase con esa dificultad y apoyo. 
+  \item (B) tras la actividad, el ITS vuelve a medir y ajusta la ruta. Este bucle mantiene trayectorias personalizadas y medibles a lo largo del curso \cite{ref7,ref8}.
 \end{enumerate}
 
 \subsection{Algoritmos de selección adaptativa}
 
-Seleccionar la siguiente actividad no es aleatorio: implica decidir con evidencia qué ítem conviene presentar para medir mejor o para favorecer el aprendizaje. En este proyecto, dicha decisión se ejecuta en el Componente B y retroalimenta al Componente A. A grandes rasgos, existen dos familias principales: selección guiada por IRT (orientada a medición precisa) y selección guiada por BKT/KT (orientada a adquisición gradual de habilidades).
+Seleccionar ''lo siguiente'' no es al azar: es decidir, con evidencia, cuál actividad o ítem conviene presentar para medir mejor o para ayudar a aprender mejor. En este proyecto, esa decisión vive en el Componente B (evaluación) y retroalimenta al Componente A (generación de clases). A grandes rasgos, hay dos familias bien establecidas: selección guiada por IRT (cuando buscamos medir con precisión) y selección guiada por BKT/KT (cuando buscamos acompañar la adquisición de habilidades en el tiempo).
 
 \subsubsection{Selección guiada por IRT (medición precisa)}
 
-IRT modela la probabilidad de respuesta correcta según $\theta$ y los parámetros del ítem. Sobre esa base, la selección adaptativa típica elige el ítem con mayor información alrededor del $\theta$ estimado, reduciendo el error estándar con menos preguntas y manteniendo la dificultad donde más informa. En la práctica se inicia con un $\theta$ neutro o un breve \textit{warm-up}; luego, tras cada respuesta, se reestima $\theta$ y se elige el ítem que maximiza la información bajo restricciones de contenido y control de exposición, con reglas de parada por longitud o precisión \cite{ref4,ref5}.
+La Teoría de Respuesta al Ítem (IRT) modela la probabilidad de respuesta correcta según el nivel del rasgo latente $\theta$ y los parámetros del ítem. Con esa base, la selección adaptativa típica elige el siguiente ítem con más información alrededor del $\theta$ estimado del estudiante. Esto reduce el error estándar de medición con menos preguntas y mantiene la dificultad ''justo donde más informa''. En la práctica, se inicia con un $\theta$ neutro o con un breve arranque \textit{warm-up}; y tras cada respuesta se reestima $\theta$ y se elige el ítem que maximiza la información (o criterios cercanos como la información de Fisher o la divergencia KL). Para mantener validez y equidad, se aplican restricciones de contenido (temas/objetivos), control de exposición (evitar sobre‑uso de ciertos ítems) y límites de longitud o precisión objetivo. En escalas politómicas (tipo Likert), la lógica es análoga: cada categoría aporta información en zonas distintas de la escala, y la selección prioriza donde la precisión es más útil  \cite{ref4,ref5}.
 
-Esto aporta a la integración A$\leftrightarrow$B al permitir que el Componente B devuelva a A un rango de dificultad recomendado y cobertura temática pendiente, evitando sobreestimar o subestimar la exigencia de la siguiente actividad \cite{ref4,ref5}.
+Qué aporta al Componente A$\leftrightarrow$B cuando el objetivo es certificar dominio o ubicar con exactitud el nivel, IRT permite pedir menos y medir mejor. El Componente B devuelve a A el rango de dificultad recomendada (y la cobertura temática pendiente), de modo que A genere actividades acordes a ese nivel y no ''sobre‑-o‑-subestime'' la exigencia \cite{ref4,ref5}.
 
 \subsubsection{Selección guiada por BKT/KT (apoyo al aprendizaje)}
 
-BKT mantiene, para cada habilidad, una probabilidad de dominio que evoluciona a lo largo del tiempo y modela cuatro parámetros usuales (conocimiento inicial, aprendizaje tras práctica, adivinación y desliz). Con este perfil, el sistema decide el siguiente ejercicio según beneficio esperado: reducir incertidumbre, confirmar dominio o provocar aprendizaje en la zona más productiva. En entornos reales también se integran prerequisitos, espaciado y señales de compromiso (tiempos, rachas). La evidencia muestra que BKT es eficaz para personalizar secuencias cuando la meta es progresar en habilidades específicas y no solo medir una vez con precisión \cite{ref9,ref11}.
+Bayesian Knowledge Tracing (BKT) sigue, para cada habilidad, la probabilidad de dominio del estudiante a lo largo del tiempo: considera un estado ''domina / no domina'' y cuatro parámetros intuitivos (conocimiento inicial, probabilidad de aprender tras una práctica, adivinación y desliz). Con ese perfil, el sistema decide el siguiente ejercicio según el mayor beneficio esperado: reducir la incertidumbre, confirmar dominio o provocar aprendizaje en la zona adecuada. En contextos reales se combinan además prerequisitos, espaciado para combatir el olvido y señales de compromiso (tiempos, rachas). La evidencia reciente muestra que BKT es eficaz para personalizar secuencias y mejorar resultados cuando la meta es progresar en habilidades específicas y no sólo ''medir una vez con precisión'' \cite{ref9,ref11}.
 
-Para A$\leftrightarrow$B, BKT permite priorizar habilidad objetivo, tipo de apoyo y el momento oportuno para refuerzo o espaciado, mientras que el Componente B actualiza probabilidades tras cada actividad ejecutada por A \cite{ref9,ref11}.
+El aporte dentro del flujo entre los Componentes A$\leftrightarrow$B, BKT entrega al Componente A no sólo una dificultad recomendada, sino también la habilidad prioritaria, el tipo de apoyo (pista, ejemplo guiado, práctica adicional) y el momento oportuno para espaciado o refuerzo. Tras la actividad de A, B actualiza las probabilidades de dominio y repite el ciclo  \cite{ref10,ref11}.
 
 \subsubsection{Estrategia híbrida}
 
-En etapas tempranas o con bancos pequeños, BKT tiende a ser más práctico porque requiere menos calibración de ítems y entrega señales útiles para guiar práctica. A medida que el banco crece y se busca una estimación fina del nivel, IRT adquiere mayor relevancia al permitir fijar una precisión objetivo y optimizar la selección. Una política viable es usar BKT para guiar práctica continua por habilidades y activar selección IRT en cortes de evaluación (diagnóstico o certificación). En este proyecto, dicha coordinación se expresa como un ciclo MAPE-K \cite{ref10}.
+En etapas tempranas o con bancos pequeños, BKT tiende a funcionar mejor porque necesita menos calibración de ítems y entrega señales útiles para enseñar. Cuando el banco crece y se busca una estimación fina del nivel, IRT gana relevancia: permite fijar una precisión objetivo y optimizar la ruta de ítems. Una política práctica es: usar BKT para guiar la práctica diaria (progreso por habilidades) y activar selección IRT en cortes de evaluación (diagnósticos o certificaciones). En la arquitectura del proyecto, esto se implementa como un bucle MAPE‑K: Monitorizar (respuestas), Analizar (IRT/BKT), Planificar (siguiente ítem o actividad) y Ejecutar (enviar a A), con conocimiento compartido del perfil del estudiante y del banco de ítems \cite{ref10}.
 
 \subsection{Métricas de desempeño en sistemas adaptativos}
 
-Las métricas permiten demostrar que el sistema mide con precisión, promueve aprendizaje y opera de forma eficiente y justa. En un sistema adaptativo se consideran dos planos: calidad de medición (precisión y validez) y calidad de enseñanza (progreso y retención), complementados con métricas predictivas y de equidad \cite{ref4,ref9,ref10,ref12}.
+Las métricas no son un listado de números: son la forma en que demostramos que el sistema realmente ayuda a aprender y que lo hace de manera eficiente y justa. En un entorno adaptativo, medir implica dos planos que se retroalimentan: la calidad de la medición (¿qué tan bien estimamos el nivel del estudiante?) y la calidad de la enseñanza (¿qué tanto aprende y con qué esfuerzo?). A continuación se presentan métricas nucleares, escritas en lenguaje claro, conectando la literatura de pruebas adaptativas y trazado del conocimiento \cite{ref4, ref12}.
 
 \subsubsection{Precisión y validez de medición (IRT/CAT)}
 
-En pruebas adaptativas orientadas a medir con exactitud, la precisión se observa en el error estándar $SE(\hat{\theta})$ y en la información del test alrededor del nivel estimado. Un buen algoritmo reduce $SE(\hat{\theta})$ con menos ítems, balanceando precisión y longitud del test. Para comparar estrategias, se puede fijar una longitud media y medir la precisión resultante, o fijar precisión objetivo y medir cuántos ítems se requieren \cite{ref12}.
+En pruebas adaptativas orientadas a medir con exactitud, la precisión se observa en el error estándar del estimador de habilidad,  $SE(\hat{\theta})$, y en la información del test alrededor del nivel estimado. Un buen algoritmo reduce  $SE(\hat{\theta})$ con menos ítems: ese equilibrio entre precisión y longitud del test es central. Para comparar métodos, es útil fijar la eficiencia (mismo número medio de ítems) y contrastar la precisión resultante, o al revés. En estudios recientes se equiparan ambos métodos (por ejemplo, IRT‑CAT vs. enfoques alternativos) y se evalúa la diferencia media y la correlación de los puntajes con respecto a un ''test completo'' considerado referencia  \cite{ref12}.
 
-También es relevante el ajuste del modelo: sesgo (diferencia promedio entre estimado y referencia), RMSE y consistencia al recalibrar. En enfoques flexibles se emplean medidas de divergencia o criterios de información para selección de modelo, que afectan la precisión final \cite{ref12}.
+Otro indicador clave es la calibración/ajuste del modelo: el sesgo (diferencia promedio entre el estimado y el valor de referencia), la RMSE (raíz del error cuadrático medio) y las curvas de calibración por tramos de la escala. Para motores más flexibles, se recurre a medidas de divergencia como $KL({\pi} || {\pi})$, que cuantifican la pérdida de información entre la densidad verdadera de puntajes y la estimada; valores pequeños señalan mejor ajuste. En simulaciones de calibración y selección de modelo, la elección del criterio de información (p. ej., BIC) afecta de forma tangible la precisión final de las estimaciones \cite{ref12}.
 
 \subsubsection{Eficiencia y carga de respuesta}
 
-La eficiencia se refleja en el número promedio de ítems administrados, su variabilidad entre estudiantes, el tiempo por objetivo alcanzado y el ahorro respecto del banco total. Además, es útil analizar cómo cambia la carga según el nivel del estudiante, ya que algunos algoritmos demandan más ítems en extremos de la escala \cite{ref12}.
+La eficiencia refleja cuántos ítems o cuánto tiempo necesita el sistema para alcanzar una precisión aceptable. Métricas prácticas incluyen: número promedio de ítems administrados, desviación típica de ese número (variabilidad de carga entre estudiantes), tiempo por objetivo alcanzado y porcentaje de ítems no administrados (ahorro respecto del banco total). Un buen sistema es más corto sin sacrificar precisión. Además, conviene analizar cómo varía la carga según el nivel verdadero: algunos algoritmos exigen más ítems en los extremos de la escala, otros en el centro; reconocer ese patrón ayuda a planificar bancos y reglas de parada  \cite{ref12}.
 
 \subsubsection{Aprendizaje y progreso}
 
-Cuando el objetivo es aprender (no solo medir), importan métricas de ganancia pre--post, tasa de dominio por unidad, tiempo o ítems hasta alcanzar un umbral y retención tras un intervalo. En KT/BKT, se reporta la evolución de probabilidad de dominio por habilidad, verificando que refuerzos y apoyos incrementen la probabilidad de forma sostenida \cite{ref9,ref11}.
+Cuando el objetivo es que el estudiante aprenda (no solo medir), importan indicadores de progreso: la ganancia entre pre‑- y post‑-prueba normalizada por la dificultad, la tasa de dominio por unidad, el tiempo/ítems hasta alcanzar un umbral de dominio, y la retención tras un intervalo (espaciado). En sistemas con trazado del conocimiento (KT/BKT), puede reportarse la probabilidad de dominio por habilidad y su evolución, verificando que las decisiones (refuerzo, explicación, práctica guiada) incrementen esa probabilidad de forma sostenida  \cite{ref4,ref9}.
 
 \subsubsection{Calidad predictiva de la política adaptativa}
 
-Para validar la consistencia del motor, se evalúa su capacidad predictiva sobre respuestas futuras mediante métricas como AUC/ROC, exactitud de clasificación de dominio y \textit{log-loss}. Estas métricas no sustituyen evidencia de aprendizaje, pero ayudan a verificar estabilidad y coherencia del sistema \cite{ref9,ref11}.
+Para validar que el sistema ''elige bien lo siguiente'', se evalúa su poder de predicción de respuestas y de dominio futuro. Métricas comunes son log‑-loss (pérdida de probabilidad), AUC/ROC para acierto de la próxima respuesta y exactitud o F1 en clasificación de dominio/no‑-dominio. En secuenciación adaptativa, también se puede medir el beneficio esperado o “regret” acumulado frente a una política de referencia. Estas métricas no sustituyen a la evidencia de aprendizaje, pero aseguran que el motor de decisión es consistente y estable \cite{ref9,ref11}.
 
 \subsubsection{Equidad y robustez}
 
-La equidad se analiza con DIF, brechas de error y precisión entre perfiles, y auditorías de exposición de ítems. La robustez requiere pruebas de sensibilidad a supuestos (unidimensionalidad, independencia local) y validación al recalibrar el banco. Además, la transparencia en el uso de datos y la interpretabilidad de reportes son claves para confianza y adopción \cite{ref4,ref5,ref12}.
+Un sistema adaptativo debe ser justo y estable. La equidad se estudia con análisis DIF (ítems que favorecen a subgrupos), comparaciones de error/precisión y tasa de dominio entre perfiles, y auditorías de exposición de ítems. La robustez exige pruebas de sensibilidad a supuestos del modelo (unidimensionalidad, independencia local) y validación cruzada cuando se recalibra el banco. Por último, la transparencia en el uso de datos y la interpretabilidad de reportes para docentes son métricas de calidad percibida y confianza  \cite{ref5,ref12}.
 
 \subsubsection{Reporte para la integración A$\leftrightarrow$B}
 
-Para cerrar el ciclo A$\leftrightarrow$B, el Componente B debe devolver un resumen compacto: (i) precisión alcanzada (por ejemplo $SE(\hat{\theta})$), (ii) eficiencia (ítems/tiempo vs. objetivo), (iii) progreso por habilidad (probabilidad de dominio y ganancia), (iv) calidad predictiva (AUC/log-loss) y (v) equidad (DIF y exposición balanceada). Con ese panel, el Componente A puede ajustar dificultad, apoyo y espaciado con criterio \cite{ref9,ref10,ref12}.
+Para cerrar el ciclo A$\leftrightarrow$B, el Componente B debe devolver un panel compacto: (i) precisión alcanzada ($SE(\hat{\theta})$,o intervalo de confianza de puntaje/total), (ii) eficiencia (ítems/tiempo vs. objetivo), (iii) progreso por habilidad (probabilidad de dominio y ganancia), (iv) calidad de predicción (AUC/log‑loss) y (v) equidad (DIF y exposición balanceada). Con ese resumen, el Componente A puede ajustar dificultad, apoyo y espaciado con criterio.

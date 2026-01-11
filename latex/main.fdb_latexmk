@@ -1,20 +1,21 @@
 # Fdb version 4
-["biber main"] 1767932058.54788 "main.bcf" "main.bbl" "main" 1767932065.95743 0
-  "main.bcf" 1767932065 112043 7eed7bda2585bf18ccd892d882c45fe6 "xelatex"
+["biber main"] 1768124245.00619 "main.bcf" "main.bbl" "main" 1768124250.52478 0
+  "main.bcf" 1768124249 116845 dc4c2f2b8242f056612995f8fb9e6370 "xelatex"
   "references.bib" 1767930964 5727 71379ecf1639b8ca7fa452b8aef2b74b ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1767932065.6785 "main.xdv" "main.pdf" "main" 1767932065.96602 0
-  "main.xdv" 1767932065 100720 6be1765ae6e99e072c4a851c35778f75 "xelatex"
+["xdvipdfmx"] 1768124250.21151 "main.xdv" "main.pdf" "main" 1768124250.53326 0
+  "main.xdv" 1768124249 246920 2839d6604fd24452aaaab940b1e0a6ac "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1767932063.18661 "c:/Users/carlo/Documents/GitHub/Adaptative-Model-Classroom/latex/main.tex" "main.xdv" "main" 1767932065.95777 2
+["xelatex"] 1768124247.19189 "c:/Users/carlo/Documents/GitHub/Adaptative-Model-Classroom/latex/main.tex" "main.xdv" "main" 1768124250.52506 0
   "C:/Users/carlo/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1767836225 27176670 e4b93f74d307f927c1e4f3d6cee1d90b ""
   "C:/Users/carlo/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/helvetic/phvb8t.tfm" 1136790254 6628 34c39492c0adc454c1c199922bba8363 ""
   "C:/Users/carlo/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/helvetic/phvbc8t.tfm" 1136790254 16004 6e60cc8746f074cea1a1905d84c1cd84 ""
+  "C:/Users/carlo/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/helvetic/phvbo8t.tfm" 1136790254 6880 fe6c7967f27585f6fa9876f3af14edd2 ""
   "C:/Users/carlo/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/helvetic/phvr8t.tfm" 1136790254 7040 b2bd27e2bfe6f6948cbc3239cae7444f ""
   "C:/Users/carlo/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/helvetic/phvrc8t.tfm" 1136790254 16152 ab9d47b69dd04cab59fcf780bd0eed36 ""
   "C:/Users/carlo/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/helvetic/phvro8t.tfm" 1136790254 7292 d408122871055bbc541d7280c154e210 ""
@@ -133,8 +134,8 @@
   "C:/Users/carlo/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/carlo/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "c:/Users/carlo/Documents/GitHub/Adaptative-Model-Classroom/latex/main.tex" 1767928222 6751 6b65ecb588fa0aa05c7279f330626c9b ""
-  "chapters/01-descripcion-componente.tex" 1767932055 22370 414be6ce2b89df51423df83531582940 ""
-  "chapters/02-metodologia.tex" 1767928823 6630 a13809c186ce7426a74017cb69048412 ""
+  "chapters/01-descripcion-componente.tex" 1768107422 25030 a140d750f9b238f30ff67ae4dc736b66 ""
+  "chapters/02-metodologia.tex" 1768124241 73806 79b82e381f0354990a195bf2950c677d ""
   "chapters/03-resultados-conclusiones.tex" 1767895100 221 386dd73c96ff64e813e2d0b680df4cfb ""
   "chapters/04-referencias.tex" 1767930553 175 5fcb7d2f51d611d7f58550e051cd9c56 ""
   "chapters/05-anexos.tex" 1767914552 406 0bf7d6c1a12ca5e0e095f6477a9ec59e ""
@@ -145,12 +146,12 @@
   "frontmatter/04-agradecimientos.tex" 1767914371 622 c0b93a1f8aea7309240bef6d11c19793 ""
   "frontmatter/05-resumen.tex" 1767914374 1048 62bcd3016681c70240ec6d1b0808007d ""
   "frontmatter/06-abstract.tex" 1767914400 896 5a09cd3ab251f3224f12cfb4b0ed0670 ""
-  "main.aux" 1767932065 13341 ff0b155cc80297ab00fdd4a799a7b7be "xelatex"
-  "main.bbl" 1767932060 27441 d10e74d179519c69de2bb593daee4deb "biber main"
-  "main.out" 1767932065 8961 989f2fa913ee3cd67f848296720018be "xelatex"
-  "main.run.xml" 1767932065 2437 bd2eca8e616e7a4b8d84ebca4629eca7 "xelatex"
+  "main.aux" 1768124249 28393 bdc581b449f40fdd70cbb6c4a5ae3240 "xelatex"
+  "main.bbl" 1768124247 27399 287b00643d96e14c1c08985d3d3e25dc "biber main"
+  "main.out" 1768124249 17979 5a7da4fa7674b603804a1f7d1f037f75 "xelatex"
+  "main.run.xml" 1768124249 2437 c3c953e7f87d928bad2fa366ea3837f4 "xelatex"
   "main.tex" 1767928222 6751 6b65ecb588fa0aa05c7279f330626c9b ""
-  "main.toc" 1767932065 5536 7efa891e665ea164c5937e2959e995c2 "xelatex"
+  "main.toc" 1768124249 11968 158cd188635a9d59ac8f8d6f07e0cd90 "xelatex"
   (generated)
   "main.aux"
   "main.bcf"
